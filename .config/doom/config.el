@@ -24,7 +24,7 @@
 (setq doom-font (font-spec :family "JetBrains Mono Nerd Font" :size 20 :weight 'medium)
       doom-variable-pitch-font (font-spec :family "Fira Sans" :size 20)
       doom-unicode-font (font-spec :family "JetBrains Mono Nerd Font" :size 20)
-      doom-big-font (font-spec :family "FiraCode Nerd Font" :size 26))
+      doom-big-font (font-spec :family "JetBrains Mono Nerd Font" :size 26))
 
 (after! doom-themes
   (setq doom-themes-enable-bold t
