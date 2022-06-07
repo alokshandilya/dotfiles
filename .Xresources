@@ -5,18 +5,18 @@ Xft.hintstyle: hintslight
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-! st.font:  JetBrainsMono Nerd Font:style:regular:pixelsize=23
-st.font:  Fira Code:style:Medium:pixelsize=20
+st.font:  JetBrainsMono Nerd Font:style:medium:pixelsize=20
+! st.font:  Fira Code:style:Medium:pixelsize=20
 ! st.font:  FiraCode Nerd Font:style:medium:pixelsize=20
 ! st.font:  Hack Nerd Font Mono:style:Medium:pixelsize=23
 ! st.font:  MonoLisa:style:Regular:pixelsize=24
 ! st.font:  Hasklug Nerd Font Mono:style:Regular:pixelsize=22
 
 ! window padding
-st.borderpx: 7
+st.borderpx: 3
 
 !- 0.1 to 0.9 = transparency
-st.alpha: 1
+st.alpha: 1.00
 
 ! -----------------------------------------------------------------------------
 ! File: gruvbox-dark.xresources
