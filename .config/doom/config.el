@@ -123,7 +123,7 @@
   ;; List of keybindings (SPC h b b)")
   ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
   ;;(setq dashboard-startup-banner "~/.config/doom/doom-emacs-dash.png")  ;; use custom image as banner
-  (setq dashboard-startup-banner "~/.config/doom/me-gruv.png")  ;; use custom image as banner
+  (setq dashboard-startup-banner "~/.config/doom/me-gruv-circle.png")  ;; use custom image as banner
   (setq dashboard-center-content t) ;; set to 't' for centered content
   (setq dashboard-items '((projects . 3)
                           (recents . 5)
