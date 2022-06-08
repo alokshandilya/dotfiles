@@ -1,20 +1,4 @@
 #!/bin/bash
 
 export _JAVA_AWT_WM_NONREPARENTING=1 
-lxsession &
-/usr/bin/emacs --daemon &
-# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-conky -c ~/.config/conky/gruvbox.conkyrc &
-
-picom --config ~/.config/picom/picom.conf --experimental-backends &
-# picom -f & disown picom
-
-./.fehbg &
-# nitrogen --restore &
-xbanish &
-
-/usr/bin/dunst &
-copyq &
-numlockx on &
-/home/aloks/Documents/GitHub/suckless/dwmblocks/dwmblocks &
 dwm
