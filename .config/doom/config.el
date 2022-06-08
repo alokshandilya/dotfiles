@@ -49,17 +49,14 @@
 
 ;; doom-themes
 ;;
-;; gruvbox
-;;(setq doom-theme 'doom-gruvbox)
-;;
-;; solarized
+;;(setq doom-theme 'doom-tomorrow-night)
 ;;(setq doom-theme 'doom-solarized-dark-high-contrast)
 ;;
 ;; gruvbox material
 (setq doom-gruvbox-dark-variant "hard")
 ;; `gruvbox-material' contrast and palette options
 (setq doom-gruvbox-material-background  "hard"  ; medium, hard (defaults to soft)
-      doom-gruvbox-material-palette     "material")    ; mix or original (defaults to material)
+     doom-gruvbox-material-palette     "material")    ; mix or original (defaults to material)
 
 ;; `gruvbox-material-light' contrast and palette options
 ;;(setq doom-gruvbox-material-light-background  "medium" ; or hard (defaults to soft)
@@ -122,8 +119,8 @@
   ;; \n\t\t\t\t\t\t\t\t\t\tOpen dired file manager (SPC d d)   \
   ;; List of keybindings (SPC h b b)")
   ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
-  ;;(setq dashboard-startup-banner "~/.config/doom/doom-emacs-dash.png")  ;; use custom image as banner
-  (setq dashboard-startup-banner "~/.config/doom/me-gruv-circle.png")  ;; use custom image as banner
+  (setq dashboard-startup-banner "~/.config/doom/doom-emacs-dash.png")  ;; use custom image as banner
+  ;;(setq dashboard-startup-banner "~/.config/doom/me-gruv-circle.png")  ;; use custom image as banner
   (setq dashboard-center-content t) ;; set to 't' for centered content
   (setq dashboard-items '((projects . 3)
                           (recents . 5)
