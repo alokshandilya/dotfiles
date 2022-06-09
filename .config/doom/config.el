@@ -55,8 +55,8 @@
 ;; gruvbox material
 (setq doom-gruvbox-dark-variant "hard")
 ;; `gruvbox-material' contrast and palette options
-(setq doom-gruvbox-material-background  "hard"  ; medium, hard (defaults to soft)
-     doom-gruvbox-material-palette     "material")    ; mix or original (defaults to material)
+(setq doom-gruvbox-material-background  "hard") ; medium, hard (defaults to soft)
+(setq doom-gruvbox-material-palette "material") ; mix or original (defaults to material)
 
 ;; `gruvbox-material-light' contrast and palette options
 ;;(setq doom-gruvbox-material-light-background  "medium" ; or hard (defaults to soft)
