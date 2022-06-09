@@ -7,7 +7,8 @@ Xft.lcdfilter: lcddefault
 
 ! st.font:  JetBrainsMono Nerd Font:style:medium:pixelsize=20
 ! st.font:  Fira Code:style:Medium:pixelsize=20
-st.font:  FiraCode Nerd Font:style:medium:pixelsize=20
+! st.font:  FiraCode Nerd Font:style:medium:pixelsize=20
+st.font:  MesloLGS NF:style:bold:pixelsize=20
 ! st.font:  Hack Nerd Font Mono:style:Medium:pixelsize=23
 ! st.font:  MonoLisa:style:Regular:pixelsize=24
 ! st.font:  Hasklug Nerd Font Mono:style:Regular:pixelsize=22
