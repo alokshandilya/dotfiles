@@ -45,8 +45,8 @@ Defaults to \"material\""
 ;; https://github.com/sainnhe/gruvbox-material-vscode/tree/master/src/palette
 (cond
  ((equal doom-gruvbox-material-background "hard")
-  (setq gm/bg           "#202020"       ;; bg
-        gm/bg-alt       "#2a2827"       ;; bg2
+  (setq gm/bg           "#1d2021"       ;; bg
+        gm/bg-alt       "#282828"       ;; bg2
         gm/base0        "#131414"       ;; bg1
         gm/base1        "#2a2827"       ;; bg2
         gm/base2        "#2e2c2b"       ;; bg3
