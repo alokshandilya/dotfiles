@@ -18,7 +18,6 @@ alias rel='xrdb merge /home/aloks/.Xresources && kill -USR1 $(pidof st)'
 alias ytbv='yt-dlp -f bestaudio+bestvideo --verbose'
 alias ytba='yt-dlp -f bestaudio -x --audio-format mp3 --verbose'
 alias ytplay='./.config/scripts/ytplay.sh'
-alias neofetch='fastfetch'
 alias emacs='emacsclient -c -a 'emacs''
 alias wallchange='feh --bg-fill -zr ~/Pictures/wallpapers'
 

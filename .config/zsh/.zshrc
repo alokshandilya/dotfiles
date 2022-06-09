@@ -94,19 +94,6 @@ setxkbmap -option caps:escape
 # swap escape and caps
 # setxkbmap -option caps:swapescape
 
-
-# fnm
-export PATH=/home/aloks/.fnm:$PATH
-eval "`fnm env`"
-
-# fnm
-export PATH=/home/aloks/.fnm:$PATH
-eval "`fnm env`"
-
-# fnm
-export PATH=/home/aloks/.fnm:$PATH
-eval "`fnm env`"
-
 # fnm
 export PATH=/home/aloks/.fnm:$PATH
 eval "`fnm env`"
