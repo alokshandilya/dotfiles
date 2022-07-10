@@ -30,6 +30,9 @@ zle -N down-line-or-beginning-search
 # Colors
 autoload -Uz colors && colors
 
+# pfetch or neofetch
+pfetch
+
 # Useful Functions
 source "$ZDOTDIR/zsh-functions"
 
@@ -43,7 +46,7 @@ zsh_add_file "zsh-prompt"
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_plugin "hlissner/zsh-autopair"
-zsh_add_completion "esc/conda-zsh-completion" false
+# zsh_add_completion "esc/conda-zsh-completion" false
 # For more plugins: https://github.com/unixorn/awesome-zsh-plugins
 # More completions https://github.com/zsh-users/zsh-completions
 
