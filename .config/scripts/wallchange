@@ -1,4 +1,4 @@
 #! /bin/bash 
 
-#feh --bg-scale -z ~/Pictures/wallpapers/ & disown feh
-feh --bg-scale -z ~/Documents/GitHub/wallpapers/ & disown feh
+feh --bg-fill -zr ~/Pictures/wallpapers
+#feh --bg-fill -z ~/Documents/GitHub/wallpapers
