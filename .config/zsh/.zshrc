@@ -30,9 +30,6 @@ zle -N down-line-or-beginning-search
 # Colors
 autoload -Uz colors && colors
 
-# pfetch or neofetch
-pfetch
-
 # Useful Functions
 source "$ZDOTDIR/zsh-functions"
 
@@ -49,6 +46,9 @@ zsh_add_plugin "hlissner/zsh-autopair"
 # zsh_add_completion "esc/conda-zsh-completion" false
 # For more plugins: https://github.com/unixorn/awesome-zsh-plugins
 # More completions https://github.com/zsh-users/zsh-completions
+
+# pfetch or neofetch
+pfetch
 
 # Key-bindings
 bindkey -s '^o' 'ranger^M'

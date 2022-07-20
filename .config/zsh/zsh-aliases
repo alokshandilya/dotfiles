@@ -3,9 +3,9 @@ alias j='z'
 alias f='zi'
 alias g='lazygit'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
-alias nvimrc='nvim ~/.config/nvim/'
-alias vim='nvim'
-alias sudovim='sudo -E nvim'
+alias vrc='nvim ~/.config/nvim/'
+alias v='nvim'
+alias sv='sudo -E nvim'
 # alias upd='sudo pacman -Sy && sudo powerpill -Su && paru -Su'
 alias upd='paru'
 alias pass='paru -Ss'
@@ -20,6 +20,9 @@ alias ytba='yt-dlp -f bestaudio -x --audio-format mp3 --verbose'
 alias ytplay='./.config/scripts/ytplay.sh'
 alias emacs='emacsclient -c -a 'emacs''
 alias wallchange='feh --bg-fill -zr ~/Pictures/wallpapers'
+alias n='notetaker'
+alias ka='killall'
+alias c='clear'
 
 # get fastest mirrors
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"

@@ -3,16 +3,15 @@
 HISTSIZE=1000000
 SAVEHIST=1000000
 export PATH="$HOME/.local/bin":$PATH
+export PATH="$HOME/.local/bin/scripts":$PATH
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/share/go/bin:$PATH
-export PATH=$HOME/Documents/Applications/console/node-v16.15.0-linux-x64/bin:$PATH
-export PATH=$HOME/Documents/Applications/console/pandoc-2.17.1.1/bin:$PATH
+export PATH=$HOME/Documents/Applications/console/pandoc/bin:$PATH
 export GOPATH=$HOME/.local/share/go
-export PATH=$HOME/.fnm:$PATH
 export PATH=$HOME/.emacs.d/bin:$PATH
-eval "$(fnm env)"
+export BAT_THEME="gruvbox-dark"
 eval "$(zoxide init zsh)"
 # eval "`pip completion --zsh`"
 
@@ -30,4 +29,3 @@ eval "$(zoxide init zsh)"
 # fi
 # unset __conda_setup
 # <<< conda initialize <<<
-
