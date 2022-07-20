@@ -18,6 +18,10 @@ alias rel='xrdb merge /home/aloks/.Xresources && kill -USR1 $(pidof st)'
 alias ytbv='yt-dlp -f bestaudio+bestvideo --verbose'
 alias ytba='yt-dlp -f bestaudio -x --audio-format mp3 --verbose'
 alias ytplay='./.config/scripts/ytplay.sh'
+
+alias mdtopdf="pandoc --pdf-engine=xelatex -V 'mainfont:DejaVuSerif' -V 'mainfontoptions:Extension=.ttf, UprightFont=*, BoldFont=*-Bold, ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic' -V 'sansfont:DejaVuSans.ttf' -V 'monofont:DejaVuSansMono.ttf' -V "geometry:margin=1in" --highlight-style=zenburn"
+# eg : mdtopdf <file.md> -o <file.pdf>
+
 alias emacs='emacsclient -c -a 'emacs''
 alias wallchange='feh --bg-fill -zr ~/Pictures/wallpapers'
 alias n='notetaker'
