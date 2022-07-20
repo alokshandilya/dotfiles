@@ -1,0 +1,13 @@
+#!/bin/bash
+
+noteFilename="$HOME/Dropbox/notes/src/note-$(date +%d-%m-%Y-%a).md"
+
+if [ ! -f $noteFilename ]; then
+  echo "# Notes for $(date +%d-%m-%Y,%A)" > $noteFilename
+fi
+
+nvim -c "norm Go" \
+  -c "norm Go## $(date +%H:%M%P)" \
+  -c "norm G2o" \
+  -c "norm zz" \
+  -c "startinsert" $noteFilename
