@@ -1,4 +1,0 @@
-#! /bin/bash 
-
-feh --bg-fill -zr ~/Pictures/wallpapers
-#feh --bg-fill -z ~/Documents/GitHub/wallpapers

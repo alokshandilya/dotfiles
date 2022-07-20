@@ -1,4 +1,0 @@
-#! /bin/bash 
-
-weather="$(curl wttr.in/Bahadurgarh?format="%t")"
-echo "${weather} "
