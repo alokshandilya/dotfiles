@@ -8,7 +8,7 @@ mkdir -p $target
 
 pandoc \
     --pdf-engine=xelatex \
-    --highlight-style=zenburn \
+    "--highlight-style=zenburn" \
     -V 'mainfont:DejaVuSerif' \
     -V 'mainfontoptions:Extension=.ttf, UprightFont=*, BoldFont=*-Bold, ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic' \
     -V 'sansfont:DejaVuSans.ttf' \
