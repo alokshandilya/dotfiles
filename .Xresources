@@ -15,7 +15,7 @@ st.font:  FiraCode Nerd Font:style:medium:pixelsize=20
 st.borderpx: 0
 
 !- 0.1 to 0.9 = transparency
-st.alpha: 0.97
+st.alpha: 1.00
 
 ! -----------------------------------------------------------------------------
 ! File: gruvbox-dark.xresources
