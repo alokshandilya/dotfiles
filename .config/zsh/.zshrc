@@ -48,7 +48,7 @@ zsh_add_plugin "hlissner/zsh-autopair"
 # More completions https://github.com/zsh-users/zsh-completions
 
 # pfetch or neofetch
-pfetch
+#pfetch
 
 # Key-bindings
 bindkey -s '^o' 'ranger^M'
