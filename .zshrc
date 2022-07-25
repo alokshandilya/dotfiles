@@ -13,5 +13,6 @@ export PATH=$HOME/Documents/Applications/console/pandoc/bin:$PATH
 export GOPATH=$HOME/.local/share/go
 export PATH=$HOME/.emacs.d/bin:$PATH
 export BAT_THEME="gruvbox-dark"
+eval "$(zoxide init zsh)"
 
 eval "$(starship init zsh)"
