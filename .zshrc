@@ -1,4 +1,14 @@
-colorscript -r
+HISTFILE=~/.zsh_history
+HISTSIZE=1000000
+SAVEHIST=1000000
+setopt appendhistory
+# some useful options (man zshoptions)
+setopt autocd extendedglob menucomplete
+unsetopt nomatch
+setopt interactive_comments
+stty stop undef  # Disable ctrl-s to freeze terminal.
+zle_highlight=('paste:none')
+unsetopt BEEP
 
 #########################
 ######## Exports ########
@@ -13,7 +23,11 @@ export PATH=$HOME/Documents/Applications/console/pandoc/bin:$PATH
 export GOPATH=$HOME/.local/share/go
 export PATH=$HOME/.emacs.d/bin:$PATH
 export BAT_THEME="gruvbox-dark"
+export QT_QPA_PLATFORMTHEME=qt5ct
 eval "$(zoxide init zsh)"
+# fnm
+export PATH=/home/aloks/.fnm:$PATH
+eval "`fnm env`"
 
 #########################
 ######## Aliases ########
@@ -63,7 +77,29 @@ alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 # For when keys break
 alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
 
+#############################
+######## Keybindings ########
+#############################
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey -s '^o' 'ranger^M'
+bindkey -s '^f' 'zi^M'
+bindkey -s '^s' 'ncdu^M'
+# bindkey -s '^n' 'nvim $(fzf)^M'
+# bindkey -s '^v' 'nvim\n'
+bindkey -s '^z' 'zi^M'
+bindkey '^[[P' delete-char
+bindkey "^p" up-line-or-beginning-search # Up
+bindkey "^n" down-line-or-beginning-search # Down
+bindkey "^k" up-line-or-beginning-search # Up
+bindkey "^j" down-line-or-beginning-search # Down
+bindkey -r "^u"
+bindkey -r "^d"
+setxkbmap -option caps:escape
+xset r rate 210 40
+
 ##########################
 ######## Starship ########
 ##########################
 eval "$(starship init zsh)"
+# colorscript -r
