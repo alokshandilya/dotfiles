@@ -5,9 +5,9 @@ Xft.hintstyle: hintslight
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-st.font:  JetBrainsMono Nerd Font:style:medium:pixelsize=21
+st.font:  JetBrainsMono Nerd Font:style:medium:pixelsize=20
 ! st.font:  FiraCode Nerd Font:style:medium:pixelsize=21
-st.font2:  Twemoji:antialias=true:autohint=true:pixelsize=22
+st.font2:  Twemoji:antialias=true:autohint=true:pixelsize=20
 ! st.font:  CaskaydiaCove Nerd Font:style:medium:pixelsize=21
 ! st.font:  MesloLGS NF:style:bold:pixelsize=20
 ! st.font:  Hasklug Nerd Font Mono:style:Regular:pixelsize=22
