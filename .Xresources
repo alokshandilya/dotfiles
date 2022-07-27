@@ -18,55 +18,17 @@ st.borderpx: 0
 !- 0.1 to 0.9 = transparency
 st.alpha: 1.00
 
-! -----------------------------------------------------------------------------
-! File: gruvbox-dark.xresources
-! Description: Retro groove colorscheme generalized
-! Author: morhetz <morhetz@gmail.com>
-! Source: https://github.com/morhetz/gruvbox-generalized
-! Last Modified: 6 Sep 2014
-! -----------------------------------------------------------------------------
-
-! ! hard contrast: *background: #1d2021
-! ! *background:  #1d2021
-! *background: #282828
-! ! soft contrast: *background: #32302f
-! *foreground: #ebdbb2
-! ! Black + DarkGrey
-! *color0:  #282828
-! *color8:  #928374
-! ! DarkRed + Red
-! *color1:  #cc241d
-! *color9:  #fb4934
-! ! DarkGreen + Green
-! *color2:  #98971a
-! *color10: #b8bb26
-! ! DarkYellow + Yellow
-! *color3:  #d79921
-! *color11: #fabd2f
-! ! DarkBlue + Blue
-! *color4:  #458588
-! *color12: #83a598
-! ! DarkMagenta + Magenta
-! *color5:  #b16286
-! *color13: #d3869b
-! ! DarkCyan + Cyan
-! *color6:  #689d6a
-! *color14: #8ec07c
-! ! LightGrey + White
-! *color7:  #a89984
-! *color15: #ebdbb2
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! Gruvbox Material Dark
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Gruvbox Material Dark !!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 *background: #1d2021
 ! medium
 ! *background: #282828
 ! soft
 ! *background: #32302f
-
 *foreground: #d4be98
-
 ! Black + DarkGrey
 *color0:  #32302f
 *color8:  #32302f
@@ -93,218 +55,25 @@ st.alpha: 1.00
 *color15: #d4be98
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! One Darker
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-! ! special
-! *.foreground:   #ABB2BF
-! *.background:   #1E232A
-! *.cursorColor:  #ABB2BF
-!
-! ! black
-! *.color0:       #2C323C
-! *.color8:       #3E4452
-!
-! ! red
-! *.color1:       #E06C75
-! *.color9:       #E06C75
-!
-! ! green
-! *.color2:       #98C379
-! *.color10:      #98C379
-!
-! ! yellow
-! *.color3:       #E5C07B
-! *.color11:      #E5C07B
-!
-! ! blue
-! *.color4:       #61AFEF
-! *.color12:      #61AFEF
-!
-! ! magenta
-! *.color5:       #C678DD
-! *.color13:      #C678DD
-!
-! ! cyan
-! *.color6:       #56B6C2
-! *.color14:      #56B6C2
-!
-! ! white
-! *.color7:       #5C6370
-! *.color15:      #ABB2BF
-
-! ###### Nord #######
-
-! Project:    Nord XResources
-! Version:    0.1.0
-! Repository: https://github.com/arcticicestudio/nord-xresources
-! License:    MIT
-
-! #define nord0 #2E3440
-! #define nord1 #3B4252
-! #define nord2 #434C5E
-! #define nord3 #4C566A
-! #define nord4 #D8DEE9
-! #define nord5 #E5E9F0
-! #define nord6 #ECEFF4
-! #define nord7 #8FBCBB
-! #define nord8 #88C0D0
-! #define nord9 #81A1C1
-! #define nord10 #5E81AC
-! #define nord11 #BF616A
-! #define nord12 #D08770
-! #define nord13 #EBCB8B
-! #define nord14 #A3BE8C
-! #define nord15 #B48EAD
-!
-! *.foreground:   nord4
-! *.background:   nord0
-! *.cursorColor:  nord4
-! *fading: 35
-! *fadeColor: nord3
-!
-! *.color0: nord1
-! *.color1: nord11
-! *.color2: nord14
-! *.color3: nord13
-! *.color4: nord9
-! *.color5: nord15
-! *.color6: nord8
-! *.color7: nord5
-! *.color8: nord3
-! *.color9: nord11
-! *.color10: nord14
-! *.color11: nord13
-! *.color12: nord9
-! *.color13: nord15
-! *.color14: nord7
-! *.color15: nord6
-
-! Dracula Xresources palette
-! *.foreground: #F8F8F2
-! *.background: #282A36
-! *.color0:     #000000
-! *.color8:     #4D4D4D
-! *.color1:     #FF5555
-! *.color9:     #FF6E67
-! *.color2:     #50FA7B
-! *.color10:    #5AF78E
-! *.color3:     #F1FA8C
-! *.color11:    #F4F99D
-! *.color4:     #BD93F9
-! *.color12:    #CAA9FA
-! *.color5:     #FF79C6
-! *.color13:    #FF92D0
-! *.color6:     #8BE9FD
-! *.color14:    #9AEDFE
-! *.color7:     #BFBFBF
-! *.color15:    #E6E6E6
-
-! ! Base16 Solarized Dark
-! ! Scheme: Ethan Schoonover (modified by aramisgithub)
-! #define base00 #002732
-! #define base01 #073642
-! #define base02 #586e75
-! #define base03 #657b83
-! #define base04 #839496
-! #define base05 #93a1a1
-! #define base06 #eee8d5
-! #define base07 #fdf6e3
-! #define base08 #dc322f
-! #define base09 #cb4b16
-! #define base0A #b58900
-! #define base0B #859900
-! #define base0C #2aa198
-! #define base0D #268bd2
-! #define base0E #6c71c4
-! #define base0F #d33682
-
-! *foreground:   base05
-! #ifdef background_opacity
-! *background:   [background_opacity]base00
-! #else
-! *background:   base00
-! #endif
-! *cursorColor:  base05
-
-! *color0:       base00
-! *color1:       base08
-! *color2:       base0B
-! *color3:       base0A
-! *color4:       base0D
-! *color5:       base0E
-! *color6:       base0C
-! *color7:       base05
-
-! *color8:       base03
-! *color9:       base08
-! *color10:      base0B
-! *color11:      base0A
-! *color12:      base0D
-! *color13:      base0E
-! *color14:      base0C
-! *color15:      base07
-
-! ! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! ! use 'shell' template to set these if necessary
-! *color16:      base09
-! *color17:      base0F
-! *color18:      base01
-! *color19:      base02
-! *color20:      base04
-! *color21:      base06
-
-! Base16 Tomorrow Night
-! Scheme: Chris Kempson (http://chriskempson.com)
-!
-! #define base00 #1d1f21
-! #define base01 #282a2e
-! #define base02 #373b41
-! #define base03 #969896
-! #define base04 #b4b7b4
-! #define base05 #c5c8c6
-! #define base06 #e0e0e0
-! #define base07 #ffffff
-! #define base08 #cc6666
-! #define base09 #de935f
-! #define base0A #f0c674
-! #define base0B #b5bd68
-! #define base0C #8abeb7
-! #define base0D #81a2be
-! #define base0E #b294bb
-! #define base0F #a3685a
-!
-! *foreground:   base05
-! #ifdef background_opacity
-! *background:   [background_opacity]base00
-! #else
-! *background:   base00
-! #endif
-! *cursorColor:  base05
-!
-! *color0:       base00
-! *color1:       base08
-! *color2:       base0B
-! *color3:       base0A
-! *color4:       base0D
-! *color5:       base0E
-! *color6:       base0C
-! *color7:       base05
-!
-! *color8:       base03
-! *color9:       base08
-! *color10:      base0B
-! *color11:      base0A
-! *color12:      base0D
-! *color13:      base0E
-! *color14:      base0C
-! *color15:      base07
-!
-! ! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! ! use 'shell' template to set these if necessary
-! *color16:      base09
-! *color17:      base0F
-! *color18:      base01
-! *color19:      base02
-! *color20:      base04
-! *color21:      base06
+!!!!!!!!! Tokyo Night !!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! *background: #1a1b26
+! *foreground: #c0caf5
+! *color0: #15161E
+! *color1: #f7768e
+! *color2: #9ece6a
+! *color3: #e0af68
+! *color4: #7aa2f7
+! *color5: #bb9af7
+! *color6: #7dcfff
+! *color7: #a9b1d6
+! *color8: #414868
+! *color9: #f7768e
+! *color10: #9ece6a
+! *color11: #e0af68
+! *color12: #7aa2f7
+! *color13: #bb9af7
+! *color14: #7dcfff
+! *color15: #c0caf5
