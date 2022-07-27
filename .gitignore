@@ -2,3 +2,4 @@
 .config/ranger/plugins/ranger_devicons/__pycache__/
 .config/zsh/plugins
 .config/zsh/.zcompdump
+.config/fish/fish_variables
