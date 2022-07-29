@@ -1,4 +1,4 @@
-ibus-daemon -d -x
+#ibus-daemon -d -x
 export EDITOR="nvim"
 export BROWSER="firefox"
 export TERM="st"
