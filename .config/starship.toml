@@ -14,8 +14,12 @@ disabled = true
 
 [directory]
 truncation_length = 3
+truncate_to_repo = true
 home_symbol = "~"
-format = "[$path]($style)[$lock_symbol]($lock_style) "
+style = "bold cyan"
+read_only = "🔒"
+read_only_style = "red"
+format = "[$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
 symbol = "🌱 "
