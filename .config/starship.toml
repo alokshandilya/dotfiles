@@ -9,6 +9,10 @@ success_symbol = "[ ](bold blue)[➜](bold green)"
 error_symbol = "[✗](bold red)"
 vicmd_symbol = "[](green)"
 
+[c]
+symbol = " "
+style = "bold green"
+
 [package]
 disabled = true
 
