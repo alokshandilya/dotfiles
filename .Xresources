@@ -5,19 +5,17 @@ Xft.hintstyle: hintslight
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-st.font:  JetBrainsMono Nerd Font:style:medium:pixelsize=20
-! st.font:  FiraCode Nerd Font:style:medium:pixelsize=21
-st.font2:  Twemoji:antialias=true:autohint=true:pixelsize=20
-! st.font:  CaskaydiaCove Nerd Font:style:medium:pixelsize=21
-! st.font:  MesloLGS NF:style:bold:pixelsize=20
-! st.font:  Hasklug Nerd Font Mono:style:Regular:pixelsize=22
+st.font: JetBrainsMono Nerd Font:style:medium:pixelsize=20
+st.font2: Twemoji:antialias=true:autohint=true:pixelsize=20
+! st.font: FiraCode Nerd Font:style:medium:pixelsize=21
+! st.font: CaskaydiaCove Nerd Font:style:medium:pixelsize=21
 
 ! window padding
 st.borderpx: 0
 
 !- 0.1 to 0.9 = transparency
 ! st.alpha: 1.00
-st.alpha: 0.85
+st.alpha: 0.95
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!! Gruvbox Material Dark !!!!!!!
