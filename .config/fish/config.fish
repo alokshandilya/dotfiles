@@ -19,7 +19,8 @@ set EDITOR "nvim"                                 # $EDITOR use nvim in terminal
 set VISUAL "emacsclient -c -a emacs"              # $VISUAL use Emacs in GUI mode
 set -x MANPAGER 'nvim +Man!'
 set -x MANWIDTH 999
-set -x BAT_THEME "gruvbox-dark"
+# set -x BAT_THEME "gruvbox-dark"
+set -x BAT_THEME "OneHalfDark"
 set -Ux QT_QPA_PLATFORMTHEME qt5ct
 
 ############################
