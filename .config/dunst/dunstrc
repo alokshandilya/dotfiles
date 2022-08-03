@@ -175,7 +175,7 @@
     max_icon_size = 55
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Tela/32/devices/:/usr/share/icons/Tela/scalable/apps/:/usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /usr/share/icons/Qogir-manjaro-dark/32/devices/:/usr/share/icons/Qogir-manjaro-dark/scalable/apps/:/usr/share/icons/Qogir-manjaro-dark/16@2x/status/:/usr/share/icons/Qogir-manjaro-dark/16@2x/devices/
 
     ### History ###
 
