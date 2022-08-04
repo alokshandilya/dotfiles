@@ -13,10 +13,10 @@ set -U fish_user_paths $HOME/.local/bin \
 ############################
 ######## EXPORTS ###########
 ############################
-set fish_greeting                                 # Supresses fish's intro message
-set TERM "xterm-256color"                         # Sets the terminal type
-set EDITOR "nvim"                                 # $EDITOR use nvim in terminal
-set VISUAL "neovide"                              # $VISUAL use neovide
+set fish_greeting                     # Supresses fish's intro message
+set TERM "xterm-256color"             # Sets the terminal type
+set EDITOR "nvim"                     # $EDITOR use nvim in terminal
+set VISUAL "neovide"                  # $VISUAL use neovide
 set -x MANPAGER 'nvim +Man!'
 set -x MANWIDTH 999
 set -x BAT_THEME "gruvbox-dark"
@@ -92,3 +92,4 @@ xset r rate 210 40
 zoxide init fish | source
 
 starship init fish | source
+pfetch
