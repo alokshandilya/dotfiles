@@ -20,6 +20,7 @@ set VISUAL "neovide"                  # $VISUAL use neovide
 set -x MANPAGER 'nvim +Man!'
 set -x MANWIDTH 999
 set -x BAT_THEME "gruvbox-dark"
+# set -x BAT_THEME "OneHalfDark"
 set -Ux QT_QPA_PLATFORMTHEME qt5ct
 
 ############################
@@ -45,7 +46,8 @@ alias g='lazygit'
 alias nvrc='nvim ~/.config/nvim/'
 alias v='nvim'
 alias sv='sudo -E nvim'
-alias upd='paru'
+alias cat='bat'
+alias upd='sudo pacman -Sy && sudo powerpill -Su && paru -Su'
 alias ls='exa --icons -l'
 alias la='exa --icons -la'
 alias pain='paru -S'
@@ -61,6 +63,7 @@ alias mdtopdf="pandoc --pdf-engine=xelatex -V 'mainfont:DejaVuSerif' -V 'mainfon
 alias emacs='emacsclient -c -a 'emacs''
 alias wallchange='feh --bg-fill -zr ~/Pictures/wallpapers'
 alias n='notetaker'
+alias ndsa='nvim ~/Dropbox/notes/src/note-1-dsa.md'
 alias ka='killall'
 alias c='clear'
 # get fastest mirrors
