@@ -4,17 +4,22 @@
 # Inserts a blank line between shell prompts [true, false]
 add_newline = false
 
+[line_break]
+disabled = false
+
 [character]
-success_symbol = "[ ](bold blue)[➜](bold green)"
-error_symbol = "[ ](bold red)[➜](bold green)"
-vicmd_symbol = "[](green)"
+success_symbol = "[ ](bold blue)[](bold green)"
+error_symbol = "[ ](bold red)[](bold green)"
+vicmd_symbol = "[](yellow)"
 
 [c]
 symbol = " "
 style = "bold green"
 
-[package]
-disabled = true
+[java]
+symbol = "☕"
+style = "red dimmed"
+version_format = "v${major}"
 
 [directory]
 truncation_length = 3
