@@ -24,7 +24,7 @@ version_format = "v${major}"
 [directory]
 truncation_length = 3
 truncate_to_repo = true
-home_symbol = "~"
+home_symbol = " (aloks)"
 style = "bold cyan"
 read_only = "🔒"
 read_only_style = "red"
@@ -56,3 +56,10 @@ discharging_symbol = "💀"
 [[battery.display]]
 threshold = 30
 style = "bold red"
+
+[nix_shell]
+symbol = "❄️ "
+disabled = true
+impure_msg = "[impure shell](bold red)"
+pure_msg = "[pure shell](bold green)"
+format = 'via [☃️ $state( \($name\))](bold blue) '
