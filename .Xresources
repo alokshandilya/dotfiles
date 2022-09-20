@@ -7,15 +7,15 @@ Xft.lcdfilter: lcddefault
 
 st.font: JetBrainsMono Nerd Font:style:medium:pixelsize=20
 st.font2: Twemoji:antialias=true:autohint=true:pixelsize=20
-! st.font: FiraCode Nerd Font:style:medium:pixelsize=21
-! st.font: CaskaydiaCove Nerd Font:style:medium:pixelsize=21
+! st.font: FiraCode Nerd Font:style:medium:pixelsize=20
+! st.font: CaskaydiaCove Nerd Font:style:medium:pixelsize=20
 
 ! window padding
 st.borderpx: 0
 
 !- 0.1 to 0.9 = transparency
-st.alpha: 1.00
-! st.alpha: 0.95
+! st.alpha: 1.00
+st.alpha: 0.97
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!! Gruvbox Material Dark !!!!!!!
