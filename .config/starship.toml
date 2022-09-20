@@ -8,8 +8,8 @@ add_newline = false
 disabled = false
 
 [character]
-success_symbol = "[ ](bold blue)[](bold green)"
-error_symbol = "[ ](bold red)[](bold green)"
+success_symbol = "[](bold green)"
+error_symbol = "[](bold red)"
 vicmd_symbol = "[](yellow)"
 
 [c]
@@ -24,7 +24,7 @@ version_format = "v${major}"
 [directory]
 truncation_length = 3
 truncate_to_repo = true
-home_symbol = " (aloks)"
+home_symbol = "~"
 style = "bold cyan"
 read_only = "🔒"
 read_only_style = "red"
