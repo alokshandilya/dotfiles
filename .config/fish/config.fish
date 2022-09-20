@@ -6,6 +6,7 @@
 set -e fish_user_paths
 set -U fish_user_paths $HOME/.local/bin \
   $HOME/.local/bin/scripts \
+  $HOME/Documents/suckless/dmenu/scripts \
   $HOME/.fnm \
   # $HOME/Documents/Applications/console/pandoc/bin \ # use pandoc-bin from aur
   $HOME/.emacs.d/bin $fish_user_paths
@@ -54,7 +55,6 @@ alias sndl='snapper delete'
 alias ls='exa --icons -l'
 alias la='exa --icons -la'
 alias pain='paru -S'
-alias mpv='mpv --hwdec=auto'
 alias parm='paru -Rns'
 alias gcp='g++ -Wall -std=c++20'
 alias rel='xrdb merge /home/aloks/.Xresources && kill -USR1 $(pidof st)'
@@ -64,9 +64,10 @@ alias ytp='yt-dlp --yes-playlist -o "%(playlist_index)s-%(title)s.%(ext)s"'
 alias mdtopdf="pandoc --pdf-engine=xelatex -V 'mainfont:DejaVuSerif' -V 'mainfontoptions:Extension=.ttf, UprightFont=*, BoldFont=*-Bold, ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic' -V 'sansfont:DejaVuSans.ttf' -V 'monofont:DejaVuSansMono.ttf' -V "geometry:margin=1in" --highlight-style=zenburn"
 # eg : mdtopdf <file.md> -o <file.pdf>
 alias emacs='emacsclient -c -a 'emacs''
-alias wallchange='feh --bg-fill -zr ~/Pictures/wallpapers'
 alias n='notetaker'
 alias ndsa='nvim ~/Dropbox/notes/src/note-1-dsa.md'
+alias ndsa2='nvim ~/Dropbox/notes/src/note-2-dsa.md'
+alias ncuet='nvim ~/Dropbox/notes/src/note-1-cuet.md'
 alias ka='killall'
 alias c='clear'
 # get fastest mirrors

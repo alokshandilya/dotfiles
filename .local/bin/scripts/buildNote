@@ -6,6 +6,7 @@ outputFile="$(basename "$filename" .md).pdf"
 
 mkdir -p $target
 
+# -V 'fontsize=12pt' \ [for big font]
 pandoc \
     --pdf-engine=xelatex \
     "--highlight-style=zenburn" \
