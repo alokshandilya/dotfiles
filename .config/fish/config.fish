@@ -7,8 +7,8 @@ set -e fish_user_paths
 set -U fish_user_paths $HOME/.local/bin \
   $HOME/.local/bin/scripts \
   $HOME/.fnm \
-  $HOME/.emacs.d/bin \
-  $HOME/Documents/Applications/console/pandoc/bin $fish_user_paths
+  # $HOME/Documents/Applications/console/pandoc/bin \ # use pandoc-bin from aur
+  $HOME/.emacs.d/bin $fish_user_paths
 
 ############################
 ######## EXPORTS ###########
