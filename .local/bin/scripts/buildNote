@@ -1,18 +1,19 @@
 #!/bin/sh
 
-filename=$1
+filename="$1"
 target="$(dirname "${filename}")/../pdf"
 outputFile="$(basename "$filename" .md).pdf"
 
-mkdir -p $target
+mkdir -p "$target"
 
-# -V 'fontsize=12pt' \ [for big font]
 pandoc \
     --pdf-engine=xelatex \
-    "--highlight-style=zenburn" \
-    -V 'mainfont:DejaVuSerif' \
-    -V 'mainfontoptions:Extension=.ttf, UprightFont=*, BoldFont=*-Bold, ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic' \
-    -V 'sansfont:DejaVuSans.ttf' \
-    -V 'monofont:DejaVuSansMono.ttf' \
-    -V "geometry:margin=1in" \
-    -o "$target/$outputFile" $filename &
+    --highlight-style=tango \
+    --variable mainfont="DejaVuSerif" \
+    --variable mainfontoptions="Extension=.ttf,UprightFont=*,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic" \
+    --variable sansfont="DejaVuSans.ttf" \
+    --variable monofont="FiraCode Nerd Font" \
+    --variable geometry="margin=0.5in" \
+    -o "$target/$outputFile" "$filename"
+
+
