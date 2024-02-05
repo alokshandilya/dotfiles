@@ -1,10 +1,10 @@
 configuration{
     modi: "drun";
-    lines: 6;
-    font: "Iosevka 14";
+    lines: 7;
+    font: "Cascadia Code 15";
     show-icons: true;
     icon-theme: "Oranchelo";
-    terminal: "kitty";
+    terminal: "st";
     drun-display-format: "{icon} {name}";
     display-drun: "  ";
     location: 0;
@@ -21,19 +21,19 @@ element-text, element-icon {
 }
 
 * {
-    dark-black: #282C33;
-    bg-col:  #1e222a;
-    border-col: #62AEEF;
-    selected-col: #62AEEF;
-    blue: #62AEEF;
-    fg-col: #eceff4;
-    fg-col2: #2e3440;
-    width: 700;
+    dark-black: #ACB0D0;
+    bg-col:  #1A1B26;
+    border-col: #7AA2F7;
+    selected-col: #7AA2F7;
+    blue: #7AA2F7;
+    fg-col: #ACB0D0;
+    fg-col2: #1A1B26;
+    width: 800;
 }
 
 window {
-    padding: 20px;
-    height: 360px;
+    padding: 15px;
+    height: 500px;
     border: 3px;
     border-color: @border-col;
     background-color: @bg-col;
@@ -84,7 +84,7 @@ element {
 }
 
 element-icon {
-    size: 25px;
+    size: 30px;
 }
 
 element selected {
