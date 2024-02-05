@@ -1,0 +1,16 @@
+#!/bin/sh
+
+filename="$1"
+outputFile="$(basename "$filename" .md).pdf"
+
+pandoc --filter mermaid-filter \
+    --pdf-engine=xelatex \
+    --highlight-style=tango \
+    --variable mainfont="DejaVuSerif" \
+    --variable mainfontoptions="Extension=.ttf,UprightFont=*,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic" \
+    --variable sansfont="Fira Sans" \
+    --variable monofont="FiraCode Nerd Font" \
+    --variable geometry="margin=0.5in" \
+    -o "$outputFile" "$filename"
+
+
