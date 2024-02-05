@@ -4,8 +4,8 @@ inode/directory=pcmanfm.desktop
 x-scheme-handler/mailspring=Mailspring.desktop
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-ZUO2R1.desktop
-text/html=firefox.desktop
-application/xhtml+xml=firefox.desktop
+text/html=microsoft-edge.desktop
+application/xhtml+xml=microsoft-edge.desktop
 image/png=feh.desktop;
 
 [Added Associations]
