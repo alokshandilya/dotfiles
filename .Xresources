@@ -6,6 +6,7 @@ Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
 ! st.font: JetBrainsMono Nerd Font:style:medium:pixelsize=20
+! st.font: MonaspiceNe Nerd Font:style:medium:pixelsize=20
 st.font2: Twemoji:antialias=true:autohint=true:pixelsize=20
 st.font: FiraCode Nerd Font:style:medium:pixelsize=20
 ! st.font: CaskaydiaCove Nerd Font:style:medium:pixelsize=20
