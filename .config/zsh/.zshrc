@@ -48,6 +48,7 @@ alias rel='xrdb merge /home/aloks/.Xresources && kill -USR1 $(pidof st)'
 alias ytbv='yt-dlp -f bestaudio+bestvideo --verbose'
 alias ytba='yt-dlp -f bestaudio -x --audio-format mp3 --verbose'
 alias mdtopdf="pandoc --pdf-engine=xelatex -V 'mainfont:DejaVuSerif' -V 'mainfontoptions:Extension=.ttf, UprightFont=*, BoldFont=*-Bold, ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic' -V 'sansfont:DejaVuSans.ttf' -V 'monofont:DejaVuSansMono.ttf' -V "geometry:margin=1in" --highlight-style=zenburn"
+alias dwmbuild="sudo cp config.def.h config.h && sudo make clean install"
 # eg : mdtopdf <file.md> -o <file.pdf>
 alias emacs='emacsclient -c -a 'emacs''
 alias wallchange='feh --bg-fill -zr ~/Pictures/wallpapers'
@@ -103,3 +104,7 @@ xset r rate 210 40
 ##########################
 eval "$(starship init zsh)"
 # colorscript -r
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
