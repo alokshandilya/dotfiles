@@ -11,5 +11,5 @@ export TERM="st"
 # export MAIL="mailspring"
 export VISUAL="lvim"
 export MOZ_USE_XINPUT2=1
-export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_QPA_PLATFORMTHEME="qt6ct"
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
