@@ -6,6 +6,7 @@
 set -e fish_user_paths
 set -U fish_user_paths $HOME/.local/bin \
   $HOME/.local/bin/scripts \
+  $HOME/.local/share/applications \
   $HOME/Documents/suckless/dmenu/scripts \
   $HOME/.local/share/fnm \
   # $HOME/.sdkman/bin/sdkman-init.sh \
@@ -18,7 +19,10 @@ set -U fish_user_paths $HOME/.local/bin \
 # set fish_greeting                     # Supresses fish's intro message
 set TERM "xterm-256color"             # Sets the terminal type
 set EDITOR "lvim"                      # $EDITOR use lvim in terminal
-set VISUAL "neovide"                  # $VISUAL use neovide
+# set VISUAL "neovide"                  # $VISUAL use neovide
+set -Ux PYENV_ROOT $HOME/.pyenv
+set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+# set -x VIRTUAL_ENV (python -c "import sys; print(sys.prefix)")
 set -x MANPAGER 'lvim +Man!'
 set -x MANWIDTH 999
 set -x BAT_THEME "gruvbox-dark"
@@ -82,7 +86,7 @@ alias ka='killall'
 alias c='clear'
 alias pipI='pip install --user --break-system-packages'
 alias pipU='pip uninstall --user --break-system-packages'
-alias spyder='QT_STYLE_OVERRIDE=Fusion spyder'
+# alias spyder='QT_STYLE_OVERRIDE=Fusion spyder'
 # get fastest mirrors
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
@@ -128,5 +132,20 @@ fish_add_path /home/aloks/.spicetify
 zoxide init fish | source
 starship init fish | source
 pyenv init - | source
+# eval (direnv hook fish)
 # pfetch
 #colorscript -e suckless
+
+# # >>> conda initialize >>>
+# # !! Contents within this block are managed by 'conda init' !!
+# if test -f /home/aloks/anaconda3/bin/conda
+#     eval /home/aloks/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+# else
+#     if test -f "/home/aloks/anaconda3/etc/fish/conf.d/conda.fish"
+#         . "/home/aloks/anaconda3/etc/fish/conf.d/conda.fish"
+#     else
+#         set -x PATH "/home/aloks/anaconda3/bin" $PATH
+#     end
+# end
+# # <<< conda initialize <<<
+
