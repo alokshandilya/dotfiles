@@ -21,13 +21,13 @@ element-text, element-icon {
 }
 
 * {
-    dark-black: #ebdbb2;
-    bg-col:  #1d2021;
-    border-col: #a89984;
-    selected-col: #a89984;
-    blue: #a89984;
-    fg-col: #ebdbb2;
-    fg-col2: #1d2021;
+    dark-black: #3B4252;
+    bg-col:  #2e3440;
+    border-col: #88C0D0;
+    selected-col: #81A1C1;
+    blue: #81a1c1;
+    fg-col: #eceff4;
+    fg-col2: #2e3440;
     width: 800;
 }
 
