@@ -74,6 +74,16 @@ lvim.builtin.treesitter.highlight.enable = true
 -- -- Additional Plugins <https://www.lunarvim.org/docs/configuration/plugins/user-plugins>
 lvim.plugins = {
   {
+    "github/copilot.vim",
+    {
+      "iamcco/markdown-preview.nvim",
+      cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+      build = "cd app && yarn install",
+      init = function()
+        vim.g.mkdp_filetypes = { "markdown" }
+      end,
+      ft = { "markdown" },
+    },
     "folke/trouble.nvim",
     "dhruvasagar/vim-open-url",
     cmd = "TroubleToggle",
