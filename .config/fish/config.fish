@@ -20,8 +20,8 @@ set -U fish_user_paths $HOME/.local/bin \
 set TERM "xterm-256color"             # Sets the terminal type
 set EDITOR "lvim"                      # $EDITOR use lvim in terminal
 # set VISUAL "neovide"                  # $VISUAL use neovide
-set -Ux PYENV_ROOT $HOME/.pyenv
-set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+# set -Ux PYENV_ROOT $HOME/.pyenv
+# set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 # set -x VIRTUAL_ENV (python -c "import sys; print(sys.prefix)")
 set -x MANPAGER 'lvim +Man!'
 set -x MANWIDTH 999
@@ -50,7 +50,7 @@ alias .5='cd ../../../../..'
 alias j='z'
 alias f='zi'
 alias g='lazygit'
-alias nvrc='nvim ~/.config/nvim/'
+alias nvrc='lvim ~/.config/lvim/'
 alias v='lvim'
 alias sv='sudo -E lvim'
 alias td='todoist-cli'
@@ -67,16 +67,18 @@ alias pain='paru -S'
 alias parm='paru -Rns'
 alias gcp='g++ -Wall -std=c++20'
 alias rel='xrdb merge /home/aloks/.Xresources && kill -USR1 $(pidof st)'
-alias ytbv='yt-dlp -f bestaudio+bestvideo --verbose --no-playlist'
+# alias ytbv='yt-dlp -f bestaudio+bestvideo --verbose --no-playlist'
+alias ytbv='yt-dlp -f "bestvideo[height<=720]+bestaudio" --merge-output-format mp4 --verbose --no-playlist'
 alias ytba='yt-dlp -f bestaudio -x --audio-format mp3 --verbose --no-playlist'
-alias ytp='yt-dlp --yes-playlist -o "%(playlist_index)s-%(title)s.%(ext)s"'
+# alias ytp='yt-dlp --yes-playlist -o "%(playlist_index)s-%(title)s.%(ext)s"'
+alias ytp='yt-dlp -f "bestvideo[height<=720]+bestaudio" --merge-output-format mp4 --yes-playlist -o "%(playlist_index)s-%(title)s.%(ext)s"'
 alias ytfzf='ytfzf --rii -t'
 alias dwmbuild='sudo cp config.def.h config.h && sudo make clean install'
 alias mdtopdf="pandoc --pdf-engine=xelatex -V 'mainfont:DejaVuSerif' -V 'mainfontoptions:Extension=.ttf, UprightFont=*, BoldFont=*-Bold, ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic' -V 'sansfont:DejaVuSans.ttf' -V 'monofont:DejaVuSansMono.ttf' -V "geometry:margin=1in" --highlight-style=zenburn"
 # eg : mdtopdf <file.md> -o <file.pdf>
 alias emacs='emacsclient -c -a 'emacs''
 alias n='notetaker'
-# alias ndsa='nvim ~/Dropbox/notes/src/note-1-dsa.md'
+# alias ndsa='lvim ~/Dropbox/notes/src/note-1-dsa.md'
 alias dsa='.local/bin/scripts/dsa.sh'
 alias ndsa='lvim ~/Dropbox/notes/src/dsa-roadmap.txt'
 alias ndsa2='lvim ~/Dropbox/notes/src/note-2-dsa.md'
