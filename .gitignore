@@ -4,3 +4,5 @@
 .config/zsh/.zcompdump
 .config/fish/fish_variables
 .config/pcmanfm
+.config/bpytop/error.log
+.config/lvim/lazy-lock.json
