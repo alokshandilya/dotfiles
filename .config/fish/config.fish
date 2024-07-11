@@ -20,8 +20,8 @@ set -U fish_user_paths $HOME/.local/bin \
 set TERM "xterm-256color"             # Sets the terminal type
 set EDITOR "lvim"                      # $EDITOR use lvim in terminal
 # set VISUAL "neovide"                  # $VISUAL use neovide
-# set -Ux PYENV_ROOT $HOME/.pyenv
-# set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+set -Ux PYENV_ROOT $HOME/.pyenv
+set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 # set -x VIRTUAL_ENV (python -c "import sys; print(sys.prefix)")
 set -x MANPAGER 'lvim +Man!'
 set -x MANWIDTH 999
@@ -50,7 +50,6 @@ alias .5='cd ../../../../..'
 alias j='z'
 alias f='zi'
 alias g='lazygit'
-alias nvrc='lvim ~/.config/lvim/'
 alias v='lvim'
 alias sv='sudo -E lvim'
 alias td='todoist-cli'
@@ -78,7 +77,7 @@ alias mdtopdf="pandoc --pdf-engine=xelatex -V 'mainfont:DejaVuSerif' -V 'mainfon
 # eg : mdtopdf <file.md> -o <file.pdf>
 alias emacs='emacsclient -c -a 'emacs''
 alias n='notetaker'
-# alias ndsa='lvim ~/Dropbox/notes/src/note-1-dsa.md'
+alias ndsa='lvim ~/Dropbox/notes/src/note-1-dsa.md'
 alias dsa='.local/bin/scripts/dsa.sh'
 alias ndsa='lvim ~/Dropbox/notes/src/dsa-roadmap.txt'
 alias ndsa2='lvim ~/Dropbox/notes/src/note-2-dsa.md'
