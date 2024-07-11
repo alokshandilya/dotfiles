@@ -15,7 +15,7 @@ unsetopt BEEP
 #########################
 export PATH="$HOME/.local/bin":$PATH
 export PATH="$HOME/.local/bin/scripts":$PATH
-export MANPAGER='nvim +Man!'
+export MANPAGER='lvim +Man!'
 export MANWIDTH=999
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/share/go/bin:$PATH
@@ -35,11 +35,11 @@ eval "`fnm env`"
 alias j='z'
 alias f='zi'
 alias g='lazygit'
-alias nvrc='nvim ~/.config/nvim/'
-alias v='nvim'
-alias sv='sudo -E nvim'
+alias v='lvim'
+alias sv='sudo -E lvim'
 alias upd='paru'
 alias ls='exa --icons -l'
+alias la='exa --icons -la'
 alias pain='paru -S'
 alias mpv='mpv --hwdec=auto'
 alias parm='paru -Rns'
