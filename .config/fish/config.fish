@@ -10,7 +10,6 @@ set -U fish_user_paths $HOME/.local/bin \
   $HOME/Documents/suckless/dmenu/scripts \
   $HOME/.local/share/fnm \
   # $HOME/.sdkman/bin/sdkman-init.sh \
-  # $HOME/Documents/Applications/console/pandoc/bin \ # use pandoc-bin from aur
   $HOME/.emacs.d/bin $fish_user_paths
 
 ############################
@@ -114,39 +113,7 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 setxkbmap -option caps:escape
 xset r rate 210 40
 
-# function fish_greeting
-#   echo -e "\e[36m ╦ ╦┬   ╔═╗┬  ┌─┐┬┌─  \e[36m"
-#   echo -e "\e[34m ╠═╣│   ╠═╣│  │ │├┴┐  \e[35m"
-#   echo -e "\e[36m ╩ ╩┴┘  ╩ ╩┴─┘└─┘┴ ┴  \e[36m"
-#   echo " 🗿🍷🗿"
-# end
-
-function fish_greeting
-  # echo -e "\e[36m ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ \e[36m"
-  # echo -e "\e[34m █░▄▄▀█░██▀▄▄▀█░█▀███░▄▄█░████░▄▄▀█░▄▄▀█░▄▀██▄██░██░██░█░▄▄▀█ \e[35m"
-  # echo -e "\e[36m █░▀▀░█░██░██░█░▄▀███▄▄▀█░▄▄░█░▀▀░█░██░█░█░██░▄█░██░▀▀░█░▀▀░█ \e[36m"
-  # echo -e "\e[34m █▄██▄█▄▄██▄▄██▄█▄███▄▄▄█▄██▄█▄██▄█▄██▄█▄▄██▄▄▄█▄▄█▀▀▀▄█▄██▄█ \e[35m"
-  # echo -e "\e[36m ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ \e[36m"
-end
-
 fish_add_path /home/aloks/.spicetify
 zoxide init fish | source
 starship init fish | source
 pyenv init - | source
-# eval (direnv hook fish)
-# pfetch
-#colorscript -e suckless
-
-# # >>> conda initialize >>>
-# # !! Contents within this block are managed by 'conda init' !!
-# if test -f /home/aloks/anaconda3/bin/conda
-#     eval /home/aloks/anaconda3/bin/conda "shell.fish" "hook" $argv | source
-# else
-#     if test -f "/home/aloks/anaconda3/etc/fish/conf.d/conda.fish"
-#         . "/home/aloks/anaconda3/etc/fish/conf.d/conda.fish"
-#     else
-#         set -x PATH "/home/aloks/anaconda3/bin" $PATH
-#     end
-# end
-# # <<< conda initialize <<<
-
