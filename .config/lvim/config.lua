@@ -9,25 +9,12 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.relativenumber = true
 
--- general
-lvim.colorscheme = "gruvbox-material"
 lvim.log.level = "info"
 lvim.format_on_save = {
   enabled = true,
   pattern = { "*.lua", "*.html", "*.css", "*.cpp", "*.js" },
   timeout = 1000,
 }
-
--- #######################################
--- ########### gruvbox-material ##########
--- #######################################
-vim.opt.background = "dark"
-vim.g.gruvbox_material_better_performance = 1
-vim.g.gruvbox_material_background = 'hard' -- soft, medium(default), hard
-vim.g.gruvbox_material_foreground = 'mix'  -- material(default), mix, original
-vim.g.gruvbox_material_enable_bold = 1
-vim.g.gruvbox_material_enable_italic = 1
-vim.g.gruvbox_material_transparent_background = 1
 
 -- keymappings <https://www.lunarvim.org/docs/configuration/keybindings>
 lvim.leader = "space"
@@ -106,29 +93,48 @@ lvim.plugins = {
         })
       end
     },
-
-    "sainnhe/gruvbox-material"
+    "ellisonleao/gruvbox.nvim"
   }
 }
 
-lvim.autocommands = {
-  {
-    "BufWritePost", -- see `:h autocmd-events`
-    {
-      -- this table is passed verbatim as `opts` to `nvim_create_autocmd`
-      pattern = { "*.md" }, -- see `:h autocmd-events`
-      callback = function()
-        -- execute script
-        vim.cmd("silent !~/.local/bin/scripts/buildNote %:p")
-      end
-    }
+-- gruvbox ellisonleao/gruvbox.nvim
+require("gruvbox").setup({
+  terminal_colors = true,
+  background = dark,
+  undercurl = true,
+  underline = true,
+  bold = true,
+  italic = {
+    strings = true,
+    emphasis = true,
+    comments = true,
+    operators = false,
+    folds = true,
   },
-}
+  strikethrough = true,
+  invert_selection = false,
+  invert_signs = false,
+  invert_tabline = false,
+  invert_intend_guides = false,
+  inverse = true,    -- invert background for search, diffs, statuslines and errors
+  contrast = "hard", -- can be "hard", "soft" or empty string
+  palette_overrides = {},
+  overrides = {},
+  dim_inactive = false,
+  transparent_mode = false,
+})
+lvim.colorscheme = "gruvbox"
 
--- If the current system shell or the `shell` option is set to /usr/bin/fish then revert to sh
-if os.getenv('SHELL') == "/usr/bin/fish" or vim.opt.shell == "/usr/bin/fish" then
-  vim.opt.shell = "/usr/bin/zsh"
-else
-  -- Else default to the system current shell.
-  vim.opt.shell = os.getenv('SHELL')
-end
+-- lvim.autocommands = {
+--   {
+--     "BufWritePost", -- see `:h autocmd-events`
+--     {
+--       -- this table is passed verbatim as `opts` to `nvim_create_autocmd`
+--       pattern = { "*.md" }, -- see `:h autocmd-events`
+--       callback = function()
+--         -- execute script
+--         vim.cmd("silent !~/.local/bin/scripts/buildNote %:p")
+--       end
+--     }
+--   },
+-- }
