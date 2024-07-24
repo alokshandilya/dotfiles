@@ -18,7 +18,7 @@ st.borderpx: 1
 
 !- 0.1 to 0.9 = transparency
 st.alpha: 1.00
-! st.alpha: 0.90
+! st.alpha: 0.97
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!! Gruvbox !!!!!!!!!!!!

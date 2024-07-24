@@ -10,7 +10,7 @@ set -U fish_user_paths $HOME/.local/bin \
   $HOME/Documents/suckless/dmenu/scripts \
   $HOME/.local/share/fnm \
   # $HOME/.sdkman/bin/sdkman-init.sh \
-  $HOME/.emacs.d/bin $fish_user_paths
+  # $HOME/.emacs.d/bin $fish_user_paths
 
 ############################
 ######## EXPORTS ###########
@@ -27,7 +27,7 @@ set -x MANWIDTH 999
 set -x BAT_THEME "gruvbox-dark"
 # set -x BAT_THEME "OneHalfDark"
 # set -x LD_PRELOAD=/usr/lib/libfreetype.so.6
-set -Ux QT_QPA_PLATFORMTHEME qt5ct
+set -Ux QT_QPA_PLATFORMTHEME qt6ct
 
 ############################
 ######## VI MODE ###########
@@ -113,7 +113,7 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 setxkbmap -option caps:escape
 xset r rate 210 40
 
-fish_add_path /home/aloks/.spicetify
+# fish_add_path /home/aloks/.spicetify
 zoxide init fish | source
 starship init fish | source
 pyenv init - | source
