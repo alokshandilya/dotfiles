@@ -9,8 +9,7 @@ set -U fish_user_paths $HOME/.local/bin \
   $HOME/.local/share/applications \
   $HOME/Documents/suckless/dmenu/scripts \
   $HOME/.local/share/fnm \
-  # $HOME/.sdkman/bin/sdkman-init.sh \
-  # $HOME/.emacs.d/bin $fish_user_paths
+  $PATH:/usr/sbin \
 
 ############################
 ######## EXPORTS ###########
@@ -18,14 +17,12 @@ set -U fish_user_paths $HOME/.local/bin \
 # set fish_greeting                     # Supresses fish's intro message
 set TERM "xterm-256color"             # Sets the terminal type
 set EDITOR "lvim"                      # $EDITOR use lvim in terminal
-# set VISUAL "neovide"                  # $VISUAL use neovide
-set -Ux PYENV_ROOT $HOME/.pyenv
+# set -Ux PYENV_ROOT $HOME/.pyenv
 set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 # set -x VIRTUAL_ENV (python -c "import sys; print(sys.prefix)")
 set -x MANPAGER 'lvim +Man!'
 set -x MANWIDTH 999
 set -x BAT_THEME "gruvbox-dark"
-# set -x BAT_THEME "OneHalfDark"
 # set -x LD_PRELOAD=/usr/lib/libfreetype.so.6
 set -Ux QT_QPA_PLATFORMTHEME qt6ct
 
@@ -116,4 +113,4 @@ xset r rate 210 40
 # fish_add_path /home/aloks/.spicetify
 zoxide init fish | source
 starship init fish | source
-pyenv init - | source
+#pyenv init - | source

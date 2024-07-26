@@ -8,6 +8,8 @@ text/html=microsoft-edge.desktop
 application/xhtml+xml=microsoft-edge.desktop
 image/png=feh.desktop;
 x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+x-scheme-handler/mailto=thorium-browser.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-ZUO2R1.desktop;
