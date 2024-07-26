@@ -1,0 +1,128 @@
+{
+    "gruvboxMaterial.darkContrast": "hard",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "settingsSync.ignoredSettings": [
+        "-vim.neovimConfigPath",
+        "-vim.autoSwitchInputMethod.defaultIM",
+        "window.customTitleBarVisibility",
+        "window.customMenuBarAltFocus"
+    ],
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1,
+        "asvetliakov.vscode-neovim": 1
+    },
+    "terminal.integrated.fontFamily": "\"JetBrainsMono Nerd Font\", \"Twemoji\"",
+    "git.autofetch": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "vim.neovimConfigPath": "/home/aloks/.config/nvim-vscode/init.vim",
+    "redhat.telemetry.enabled": false,
+    "workbench.startupEditor": "none",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "vim.autoSwitchInputMethod.defaultIM": "vim.autoSwitchInputMethod.switchIMCmd",
+    "vim.commandLineModeKeyBindings": [],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "github.copilot.advanced": {},
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.wordWrap": "on",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "notebook.markup.fontSize": 15,
+    "leetcode.workspaceFolder": "/home/aloks/.leetcode",
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.hint.commentDescription": false,
+    "leetcode.hint.commandShortcut": false,
+    "editor.defaultFormatter": "ms-python.python",
+    "notebook.defaultFormatter": "ms-python.python",
+    "leetcode.editor.shortcuts": [
+        "test",
+        "submit"
+    ],
+    "python.analysis.nodeExecutable": "node",
+    "terminal.external.linuxExec": "/usr/local/bin/st",
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "terminal.integrated.shellArgs.linux": [
+        "-l",
+        "-d 3"
+    ],
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "terminal.integrated.fontWeight": "normal",
+    "window.menuBarVisibility": "hidden",
+    "editor.fontSize": 16,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "notebook.output.fontFamily": "\"FiraCode Nerd Font\"",
+    "markdown.preview.lineHeight": 1.1,
+    "editor.suggestFontSize": 14,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Monokai Night",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Fira Code', 'monospace'",
+    "files.autoSave": "afterDelay",
+    "workbench.layoutControl.type": "toggles",
+    "material-icon-theme.files.color": "#ff7043",
+    "html.format.contentUnformatted": "",
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.associations": {
+        "**/views/**/*.html": "django-html",
+        "*.tpl": "django-html"
+    },
+    "[django-html]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "junstyle.vscode-django-support"
+    },
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.confirmOnExit": "hasChildProcesses",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    // linux setxkbmap -option caps:escape working
+    "keyboard.dispatch": "keyCode",
+    "terminal.integrated.lineHeight": 1.05,
+    "editor.fontLigatures": true,
+}
