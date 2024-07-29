@@ -4,6 +4,7 @@ Xft.autohint: 0
 Xft.hintstyle: hintslight
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
+Xft.dpi: 96
 
 ! st.font: JetBrainsMono Nerd Font:style:medium:pixelsize=18
 ! st.font: MonaspiceAr Nerd Font:style:medium:pixelsize=18

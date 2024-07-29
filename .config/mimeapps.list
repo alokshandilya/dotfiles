@@ -1,6 +1,7 @@
 [Default Applications]
-text/plain=code.desktop
-inode/directory=thunar.desktop
+application/octet-stream=mousepad.desktop
+text/plain=notepadqq.desktop
+inode/directory=pcmanfm.desktop
 x-scheme-handler/mailspring=Mailspring.desktop
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-ZUO2R1.desktop
@@ -10,6 +11,15 @@ image/png=feh.desktop;
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
 x-scheme-handler/mailto=thorium-browser.desktop
+image/gif=viewnior.desktop;gimp.desktop
+image/jpeg=viewnior.desktop;gimp.desktop
+image/png=viewnior.desktop;gimp.desktop
+video/mp4=vlc.desktop
+video/ogg=vlc.desktop
+video/x-flv=vlc.desktop
+video/x-ms-wmv=vlc.desktop
+video/x-ogm+ogg=vlc.desktop
+video/x-theora+ogg=vlc.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-ZUO2R1.desktop;
