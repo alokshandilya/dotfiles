@@ -1,18 +1,18 @@
+ibus-daemon -d -x
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export ZDOTDIR="$HOME"/.config/zsh
 export ANDROID_HOME="$XDG_DATA_HOME"/android
-export EDITOR="lvim"
-export BROWSER="firefox"
+export EDITOR=nvim
+export BROWSER=firefox
 # export BROWSER="microsoft-edge-stable"
 export TERM="st"
-# export MAIL="mailspring"
-export VISUAL="lvim"
+export MAIL="thunderbird"
+export VISUAL="nvim"
 export MOZ_USE_XINPUT2=1
 export QT_QPA_PLATFORMTHEME="qt5ct"
-# export QT_STYLE_OVERRIDE=kvantum
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export PATH="$PATH:$HOME/.local/pyvenv/bin/"
 export LIBVA_DRI3_DISABLE=1
