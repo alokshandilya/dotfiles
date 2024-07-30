@@ -125,4 +125,7 @@
     "keyboard.dispatch": "keyCode",
     "terminal.integrated.lineHeight": 1.05,
     "editor.fontLigatures": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
 }
