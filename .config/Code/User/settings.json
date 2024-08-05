@@ -18,7 +18,6 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "vim.neovimConfigPath": "/home/aloks/.config/nvim-vscode/init.vim",
     "redhat.telemetry.enabled": false,
     "workbench.startupEditor": "none",
     "[html]": {
@@ -59,8 +58,8 @@
         "submit"
     ],
     "python.analysis.nodeExecutable": "node",
-    "terminal.external.linuxExec": "/usr/local/bin/st",
-    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "terminal.external.linuxExec": "/usr/local/bin/alacritty",
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
     "terminal.integrated.shellArgs.linux": [
         "-l",
         "-d 3"
@@ -92,7 +91,7 @@
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "terminal.integrated.fontWeight": "normal",
     "window.menuBarVisibility": "hidden",
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
@@ -100,7 +99,7 @@
     "markdown.preview.lineHeight": 1.1,
     "editor.suggestFontSize": 14,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Monokai Night",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Fira Code', 'monospace'",
     "files.autoSave": "afterDelay",
     "workbench.layoutControl.type": "toggles",
@@ -128,4 +127,20 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.defaultProfile.linux": "zsh",
 }
