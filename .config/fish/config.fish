@@ -10,6 +10,7 @@ set -U fish_user_paths $HOME/.local/bin \
   $HOME/Documents/suckless/dmenu/scripts \
   $HOME/.local/share/fnm \
   $PATH:/usr/sbin \
+  $HOME/.config/emacs/bin \
 
 ############################
 ######## EXPORTS ###########
@@ -18,7 +19,7 @@ set -U fish_user_paths $HOME/.local/bin \
 set TERM "xterm-256color"             # Sets the terminal type
 set EDITOR "lvim"                      # $EDITOR use lvim in terminal
 set -Ux PYENV_ROOT $HOME/.pyenv
-#set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 #set -x VIRTUAL_ENV (python -c "import sys; print(sys.prefix)")
 set -x MANPAGER 'lvim +Man!'
 set -x MANWIDTH 999
@@ -37,6 +38,9 @@ end
 ############################
 ######## ALIASES ###########
 ############################
+# temp (delete)
+alias rest='rm core/store.sqlite3 -f && export FLASK_APP=core/server.py && flask db upgrade -d core/migrations'
+alias resttest='rm core/store.sqlite3 -f && export FLASK_APP=core/server.py && flask db upgrade -d core/migrations && pytest -vvv -s tests/'
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -71,7 +75,7 @@ alias ytfzf='ytfzf --rii -t'
 alias dwmbuild='sudo cp config.def.h config.h && sudo make clean install'
 alias mdtopdf="pandoc --pdf-engine=xelatex -V 'mainfont:DejaVuSerif' -V 'mainfontoptions:Extension=.ttf, UprightFont=*, BoldFont=*-Bold, ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic' -V 'sansfont:DejaVuSans.ttf' -V 'monofont:DejaVuSansMono.ttf' -V "geometry:margin=1in" --highlight-style=zenburn"
 # eg : mdtopdf <file.md> -o <file.pdf>
-alias emacs='emacsclient -c -a 'emacs''
+# alias emacs='emacsclient -c -a 'emacs''
 alias n='notetaker'
 alias ndsa='lvim ~/Dropbox/notes/src/note-1-dsa.md'
 alias dsa='.local/bin/scripts/dsa.sh'
@@ -107,7 +111,7 @@ alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 # For when keys break
 alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
 
-setxkbmap -option caps:escape
+# setxkbmap -option caps:escape
 xset r rate 210 40
 
 # fish_add_path /home/aloks/.spicetify
