@@ -15,5 +15,9 @@
 .config/ranger/*
 !.config/ranger/rc.conf
 
-
+.config/zsh/*
+!.config/zsh/.zshrc
+!.config/zsh/aliases.zsh
+!.config/zsh/functions.zsh
+!.config/zsh/export.zsh
 
