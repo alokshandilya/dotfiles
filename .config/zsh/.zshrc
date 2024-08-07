@@ -1,6 +1,8 @@
 #!/bin/sh
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
 
+xset r rate 210 40
+
 # history
 HISTFILE=~/.zsh_history
 
