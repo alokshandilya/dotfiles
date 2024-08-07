@@ -13,7 +13,7 @@ configuration{
     hide-scrollbar: true;
 }
 
-@theme "/dev/null"
+//@theme "/dev/null"
 
 element-text, element-icon {
     background-color: inherit;
@@ -92,3 +92,5 @@ element selected {
     background-color:  @selected-col ;
     text-color: @fg-col2  ;
 }
+
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
