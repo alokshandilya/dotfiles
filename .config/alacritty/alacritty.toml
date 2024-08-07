@@ -1,0 +1,15 @@
+import = [
+    "~/dotfiles/.config/alacritty/themes/themes/gruvbox_dark.toml"
+]
+
+[font]
+size=13.0
+normal = { family = "FiraCode Nerd Font", style = "Retina" }
+
+[keyboard]
+bindings = [
+   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
+]
+
+[window]
+padding = { x = 5, y = 5 }

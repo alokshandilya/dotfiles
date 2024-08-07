@@ -79,6 +79,7 @@
 ;;   `require' or `use-package'.
 ;; - `map!' for binding new keys
 (setq exec-path (append exec-path '("~/.local/share/fnm/node-versions/v20.16.0/installation/bin")))
+(setq copilot-node-executable "/home/aloks/.local/share/fnm/node-versions/v20.16.0/installation/bin/node")
 (setq shell-file-name (executable-find "bash"))
 (setq-default vterm-shell (executable-find "zsh"))
 (setq-default vterm-max-scrollback 10000)
@@ -103,33 +104,33 @@
               ("C-<tab>" . 'copilot-accept-completion-by-word)))
 
 ;; dashboard
-(use-package dashboard
-  :init
-  (dashboard-setup-startup-hook)
-  (setq dashboard-set-heading-icons t)
-  (setq dashboard-set-file-icons t)
-  (setq dashboard-banner-logo-title "Welcome Alok ! 👋 💻 ")
-  ;;(setq dashboard-banner-logo-title "\n\t\t\t\t\t\t\t\t\t\t-> KEYBINDINGS:\
-  ;;\n\t\t\t\t\t\t\t\t\t\tFind file               (SPC .)     \
-  ;; Open buffer list    (SPC b i)\
-  ;; \n\t\t\t\t\t\t\t\t\t\tFind recent files       (SPC f r)   \
-  ;; Open the eshell     (SPC e s)\
-  ;; \n\t\t\t\t\t\t\t\t\t\tOpen dired file manager (SPC d d)   \
-  ;; List of keybindings (SPC h b b)")
-  ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
-  ;; (setq dashboard-startup-banner "~/.config/doom/doom-emacs-dash.png")  ;; use custom image as banner
-  (setq dashboard-startup-banner "~/.config/doom/me-gruv-circle.png")  ;; use custom image as banner
-  (setq dashboard-center-content t) ;; set to 't' for centered content
-  (setq dashboard-items '((projects . 3)
-                          (recents . 5)
-                          (agenda . 2)
-                          (bookmarks . 2)))
-                          ;;(registers . 3)))
-  :config
-  (dashboard-modify-heading-icons '((recents . "file-text")
-                                    (bookmarks . "book"))))
-(setq doom-fallback-buffer-name "*dashboard*")
-(setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
+;; (use-package dashboard
+;;   :init
+;;   (dashboard-setup-startup-hook)
+;;   (setq dashboard-set-heading-icons t)
+;;   (setq dashboard-set-file-icons t)
+;;   (setq dashboard-banner-logo-title "Welcome Alok ! 👋 💻 ")
+;;   ;;(setq dashboard-banner-logo-title "\n\t\t\t\t\t\t\t\t\t\t-> KEYBINDINGS:\
+;;   ;;\n\t\t\t\t\t\t\t\t\t\tFind file               (SPC .)     \
+;;   ;; Open buffer list    (SPC b i)\
+;;   ;; \n\t\t\t\t\t\t\t\t\t\tFind recent files       (SPC f r)   \
+;;   ;; Open the eshell     (SPC e s)\
+;;   ;; \n\t\t\t\t\t\t\t\t\t\tOpen dired file manager (SPC d d)   \
+;;   ;; List of keybindings (SPC h b b)")
+;;   ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
+;;   ;; (setq dashboard-startup-banner "~/.config/doom/doom-emacs-dash.png")  ;; use custom image as banner
+;;   (setq dashboard-startup-banner "~/.config/doom/me-gruv.png")  ;; use custom image as banner
+;;   (setq dashboard-center-content t) ;; set to 't' for centered content
+;;   (setq dashboard-items '((projects . 3)
+;;                           (recents . 5)
+;;                           (agenda . 2)
+;;                           (bookmarks . 2)))
+;;                           ;;(registers . 3)))
+;;   :config
+;;   (dashboard-modify-heading-icons '((recents . "file-text")
+;;                                     (bookmarks . "book"))))
+;; (setq doom-fallback-buffer-name "*dashboard*")
+;; (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
 
 ;; global beacon minor-mode
 (use-package! beacon)
