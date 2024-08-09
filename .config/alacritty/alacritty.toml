@@ -1,5 +1,5 @@
 import = [
-    "~/dotfiles/.config/alacritty/themes/themes/gruvbox_dark.toml"
+    "~/dotfiles/.config/alacritty/themes/gruvbox_dark.toml"
 ]
 
 [font]
