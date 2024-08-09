@@ -19,5 +19,10 @@
 !.config/zsh/.zshrc
 !.config/zsh/aliases.zsh
 !.config/zsh/functions.zsh
-!.config/zsh/export.zsh
+!.config/zsh/exports.zsh
 
+.config/doom/*
+!.config/doom/init.el
+!.config/doom/packages.el
+!.config/doom/config.el
+!.config/doom/*.png

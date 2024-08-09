@@ -104,33 +104,46 @@
               ("C-<tab>" . 'copilot-accept-completion-by-word)))
 
 ;; dashboard
-;; (use-package dashboard
-;;   :init
-;;   (dashboard-setup-startup-hook)
-;;   (setq dashboard-set-heading-icons t)
-;;   (setq dashboard-set-file-icons t)
-;;   (setq dashboard-banner-logo-title "Welcome Alok ! 👋 💻 ")
-;;   ;;(setq dashboard-banner-logo-title "\n\t\t\t\t\t\t\t\t\t\t-> KEYBINDINGS:\
-;;   ;;\n\t\t\t\t\t\t\t\t\t\tFind file               (SPC .)     \
-;;   ;; Open buffer list    (SPC b i)\
-;;   ;; \n\t\t\t\t\t\t\t\t\t\tFind recent files       (SPC f r)   \
-;;   ;; Open the eshell     (SPC e s)\
-;;   ;; \n\t\t\t\t\t\t\t\t\t\tOpen dired file manager (SPC d d)   \
-;;   ;; List of keybindings (SPC h b b)")
-;;   ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
-;;   ;; (setq dashboard-startup-banner "~/.config/doom/doom-emacs-dash.png")  ;; use custom image as banner
-;;   (setq dashboard-startup-banner "~/.config/doom/me-gruv.png")  ;; use custom image as banner
-;;   (setq dashboard-center-content t) ;; set to 't' for centered content
-;;   (setq dashboard-items '((projects . 3)
-;;                           (recents . 5)
-;;                           (agenda . 2)
-;;                           (bookmarks . 2)))
-;;                           ;;(registers . 3)))
-;;   :config
-;;   (dashboard-modify-heading-icons '((recents . "file-text")
-;;                                     (bookmarks . "book"))))
-;; (setq doom-fallback-buffer-name "*dashboard*")
-;; (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
+(use-package dashboard
+  :ensure t
+  :init
+  (setq dashboard-display-icons-p t)     ; display icons on both GUI and terminal
+  (setq dashboard-icon-type 'nerd-icons) ; use `nerd-icons' package
+  (setq dashboard-set-heading-icons t)
+  (setq dashboard-set-file-icons t)
+  (setq dashboard-projects-backend 'projectile)
+  (setq dashboard-banner-logo-title "Welcome Alok ! 👋 💻 ")
+  (setq dashboard-startup-banner "~/.config/doom/doom-emacs-dash.png")  ;; use custom image as banner
+  ;; (setq dashboard-startup-banner "~/.config/doom/me-gruv.png")  ;; use custom image as banner
+  (setq dashboard-center-content t) ;; set to 't' for centered content
+  (setq dashboard-vertically-center-content t) ;; set to 't' for vertically centered content
+  (setq dashboard-items '((projects . 5)
+                          (recents . 7)))
+  :config
+  (setq doom-fallback-buffer-name "*dashboard*")
+  (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
+  (setq dashboard-startupify-list '(dashboard-insert-banner
+                                    dashboard-insert-newline
+                                    dashboard-insert-banner-title
+                                    dashboard-insert-newline
+                                    dashboard-insert-newline
+                                    dashboard-insert-items
+                                    dashboard-insert-newline
+                                    dashboard-insert-footer))
+  (dashboard-setup-startup-hook))
+
+;; pyenv
+(require 'pyenv-mode)
+
+(defun projectile-pyenv-mode-set ()
+  "Set pyenv version matching project name."
+  (let ((project (projectile-project-name)))
+    (if (member project (pyenv-mode-versions))
+        (pyenv-mode-set project)
+      (pyenv-mode-unset))))
+
+(add-hook 'projectile-after-switch-project-hook 'projectile-pyenv-mode-set)
+
 
 ;; global beacon minor-mode
 (use-package! beacon)
