@@ -26,3 +26,6 @@
 !.config/doom/packages.el
 !.config/doom/config.el
 !.config/doom/*.png
+
+.config/alacritty/*
+!.config/alacritty/alacritty.toml

@@ -91,7 +91,7 @@
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "terminal.integrated.fontWeight": "normal",
     "window.menuBarVisibility": "hidden",
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },

@@ -29,8 +29,8 @@ bindkey '^ ' autosuggest-accept
 export PATH="$HOME/.local/bin":$PATH
 
 if command -v bat &> /dev/null; then
-  alias cat="bat -pp --theme \"Visual Studio Dark+\"" 
-  alias catt="bat --theme \"Visual Studio Dark+\"" 
+  alias cat="bat --theme gruvbox-dark" 
+  alias catt="bat -pp --theme gruvbox-dark" 
 fi
 
 bindkey '^[[A' history-substring-search-up
@@ -44,7 +44,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # bun completions
-# [ -s "/Users/chris/.bun/_bun" ] && source "/Users/chris/.bun/_bun"
+# [ -s "/Users/aloks/.bun/_bun" ] && source "/Users/aloks/.bun/_bun"
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
@@ -57,3 +57,8 @@ esac
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
