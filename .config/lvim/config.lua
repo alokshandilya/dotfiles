@@ -27,6 +27,7 @@ lvim.keys.normal_mode["<S-q>"] = ":BufferKill<CR>"
 lvim.keys.visual_mode["lf"] = ":lua vim.lsp.buf.range_formatting()<CR>"
 lvim.keys.normal_mode["<C-c>"] = ":ColorizerToggle<CR>"
 
+lvim.builtin.which_key.mappings["a"] = { "<cmd>lua require('lspimport').import()<CR>", "LSP Import" }
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
@@ -59,6 +60,7 @@ lvim.builtin.treesitter.highlight.enable = true
 lvim.plugins = {
 	{
 		"github/copilot.vim",
+		"stevanmilic/nvim-lspimport",
 		{
 			"iamcco/markdown-preview.nvim",
 			cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },

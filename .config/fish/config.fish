@@ -112,7 +112,7 @@ alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
 
 # setxkbmap -option caps:escape
-xset r rate 210 40
+# xset r rate 210 40
 
 # fish_add_path /home/aloks/.spicetify
 zoxide init fish | source

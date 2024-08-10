@@ -3,7 +3,7 @@
 HISTSIZE=1000000
 SAVEHIST=1000000
 export EDITOR="lvim"
-export TERMINAL="alacritty"
+export TERMINAL="kitty"
 export BROWSER="firefox"
 export PATH="$HOME/.local/bin":$PATH
 export PATH="$HOME/.docker/bin":$PATH
@@ -17,7 +17,6 @@ export PATH=$HOME/.local/share/fnm:$PATH
 export PATH=$HOME/.config/emacs/bin:$PATH
 export PATH="$HOME/.local/share/neovim/bin":$PATH
 export PATH="$HOME/.local/share/bob/lvim-bin":$PATH
-export XDG_CURRENT_DESKTOP="Wayland"
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_ENV_HINTS=1
 #export PATH="$PATH:./node_modules/.bin"
