@@ -21,10 +21,10 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 18 :weight 'medium)
+(setq doom-font (font-spec :family "FiraCode Nerd Font" :size 18 :weight 'medium)
       doom-variable-pitch-font (font-spec :family "Fira Sans" :size 18)
-      doom-symbol-font (font-spec :family "JetBrainsMono Nerd Font" :size 18)
-      doom-big-font (font-spec :family "JetBrainsMono Nerd Font" :size 24))
+      ;; doom-symbol-font (font-spec :family "FiraCode Nerd Font" :size 18)
+      doom-big-font (font-spec :family "FiraCode Nerd Font" :size 22))
 
  (after! doom-themes
   (setq doom-themes-enable-bold t
@@ -113,8 +113,8 @@
   (setq dashboard-set-file-icons t)
   (setq dashboard-projects-backend 'projectile)
   (setq dashboard-banner-logo-title "Welcome Alok ! 👋 💻 ")
-  (setq dashboard-startup-banner "~/.config/doom/doom-emacs-dash.png")  ;; use custom image as banner
-  ;; (setq dashboard-startup-banner "~/.config/doom/me-gruv.png")  ;; use custom image as banner
+  ;; (setq dashboard-startup-banner "~/.config/doom/doom-emacs-dash.png")  ;; use custom image as banner
+  (setq dashboard-startup-banner "~/.config/doom/me-gruv.png")  ;; use custom image as banner
   (setq dashboard-center-content t) ;; set to 't' for centered content
   (setq dashboard-vertically-center-content t) ;; set to 't' for vertically centered content
   (setq dashboard-items '((projects . 5)
