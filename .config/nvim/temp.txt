@@ -1,6 +1,0 @@
- .
-├──  lua
-│  ├──  aloks
-│  └──  plugins
-├──  init.lua
-└──  lazy-lock.json
