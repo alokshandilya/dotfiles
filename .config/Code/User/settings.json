@@ -57,7 +57,7 @@
         "test",
         "submit"
     ],
-    "python.analysis.nodeExecutable": "node",
+    "python.analysis.nodeExecutable": "/home/aloks/.local/share/fnm/node-versions/v20.16.0/installation/bin/node",
     "terminal.external.linuxExec": "/usr/local/bin/alacritty",
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
     "terminal.integrated.shellArgs.linux": [
@@ -90,15 +90,14 @@
     },
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "terminal.integrated.fontWeight": "normal",
-    "window.menuBarVisibility": "hidden",
-    "editor.fontSize": 16,
+    "window.menuBarVisibility": "toggle",
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "notebook.output.fontFamily": "\"FiraCode Nerd Font\"",
     "markdown.preview.lineHeight": 1.1,
     "editor.suggestFontSize": 14,
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "Monokai Pro Icons",
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Fira Code', 'monospace'",
     "files.autoSave": "afterDelay",
@@ -116,7 +115,7 @@
         "editor.formatOnSave": false,
         "editor.defaultFormatter": "junstyle.vscode-django-support"
     },
-    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.gpuAcceleration": "on",
     "terminal.explorerKind": "external",
     "terminal.integrated.confirmOnExit": "hasChildProcesses",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
@@ -141,6 +140,10 @@
         "*.sdb": "${capture}.${extname}-*",
         "*.s3db": "${capture}.${extname}-*"
     },
-    "terminal.integrated.fontSize": 13,
     "terminal.integrated.defaultProfile.linux": "zsh",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "python.analysis.autoImportCompletions": true,
+    "workbench.activityBar.location": "bottom",
 }

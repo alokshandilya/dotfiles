@@ -3,8 +3,10 @@ import = [
 ]
 
 [font]
-size=13.0
-normal = { family = "FiraCode Nerd Font", style = "Retina" }
+size=14.0
+# normal = { family = "FiraCode Nerd Font", style = "Retina" }
+normal = { family = "JetBrainsMono Nerd Font", style = "Medium" }
+# normal = { family = "Dank Mono", style = "Medium" }
 
 [keyboard]
 bindings = [
@@ -13,3 +15,7 @@ bindings = [
 
 [window]
 padding = { x = 5, y = 5 }
+opacity=0.97
+
+[mouse]
+hide_when_typing = true

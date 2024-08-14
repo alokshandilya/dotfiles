@@ -91,7 +91,12 @@ lvim.plugins = {
 				})
 			end,
 		},
-		"ellisonleao/gruvbox.nvim",
+		{
+			"ellisonleao/gruvbox.nvim",
+			priority = 1000,
+			config = true,
+			opts = ...,
+		},
 		"AckslD/swenv.nvim",
 		"stevearc/dressing.nvim",
 	},
@@ -99,40 +104,66 @@ lvim.plugins = {
 
 -- gruvbox ellisonleao/gruvbox.nvim
 require("gruvbox").setup({
-	terminal_colors = true,
 	background = dark,
-	undercurl = true,
-	underline = true,
-	bold = true,
-	italic = {
-		strings = true,
-		emphasis = true,
-		comments = true,
-		operators = false,
-		folds = true,
-	},
-	strikethrough = true,
-	invert_selection = false,
-	invert_signs = false,
-	invert_tabline = false,
-	invert_intend_guides = false,
-	inverse = true, -- invert background for search, diffs, statuslines and errors
 	contrast = "hard", -- can be "hard", "soft" or empty string
-	palette_overrides = {},
-	overrides = {},
-	dim_inactive = false,
-	transparent_mode = false,
+	transparent_mode = true,
 })
 lvim.colorscheme = "gruvbox"
 
 -- block : python
-local formatters = require("lvim.lsp.null-ls.formatters")
-formatters.setup({ { name = "black" } })
+-- local formatters = require("lvim.lsp.null-ls.formatters")
+-- formatters.setup({ { name = "black" } })
 
-local linters = require("lvim.lsp.null-ls.linters")
-linters.setup({ { command = "flake8", args = { "--ignore=E203" }, filetypes = { "python" } } })
+-- local linters = require("lvim.lsp.null-ls.linters")
+-- linters.setup({ { command = "flake8", args = { "--ignore=E203" }, filetypes = { "python" } } })
 
-require("lvim.lsp.manager").setup("pyright", opts)
+require("lspconfig").ruff.setup({
+	init_options = {
+		settings = {
+			-- Ruff language server settings go here
+		},
+	},
+})
+
+vim.api.nvim_create_autocmd("LspAttach", {
+	group = vim.api.nvim_create_augroup("lsp_attach_disable_ruff_hover", { clear = true }),
+	callback = function(args)
+		local client = vim.lsp.get_client_by_id(args.data.client_id)
+		if client == nil then
+			return
+		end
+		if client.name == "ruff" then
+			-- Disable hover in favor of Pyright
+			client.server_capabilities.hoverProvider = false
+		end
+	end,
+	desc = "LSP: Disable hover capability from Ruff",
+})
+
+require("lspconfig").pyright.setup({
+	settings = {
+		pyright = {
+			-- Using Ruff's import organizer
+			disableOrganizeImports = true,
+		},
+		python = {
+			analysis = {
+				-- Ignore all files for analysis to exclusively use Ruff for linting
+				ignore = { "*" },
+			},
+		},
+	},
+})
+
+require("lspconfig").ruff.setup({
+	trace = "messages",
+	init_options = {
+		settings = {
+			logLevel = "debug",
+		},
+	},
+})
+
 -- endblock : python
 
 -- block : lua
