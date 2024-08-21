@@ -2,13 +2,13 @@
 # HISTFILE="$XDG_DATA_HOME"/zsh/history
 HISTSIZE=1000000
 SAVEHIST=1000000
-export EDITOR="lvim"
+export EDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="firefox"
 export PATH="$HOME/.local/bin":$PATH
 export PATH="$HOME/.docker/bin":$PATH
 # export PATH="$HOME/.local/lvim-macos-arm64/bin":$PATH
-export MANPAGER='lvim +Man!'
+export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/share/go/bin:$PATH
