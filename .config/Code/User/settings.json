@@ -1,5 +1,4 @@
 {
-    "gruvboxMaterial.darkContrast": "hard",
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -46,48 +45,10 @@
     "editor.wordWrap": "on",
     "github.copilot.editor.enableAutoCompletions": true,
     "notebook.markup.fontSize": 15,
-    "leetcode.workspaceFolder": "/home/aloks/.leetcode",
-    "leetcode.defaultLanguage": "python3",
-    "leetcode.hint.configWebviewMarkdown": false,
-    "leetcode.hint.commentDescription": false,
-    "leetcode.hint.commandShortcut": false,
     "editor.defaultFormatter": "ms-python.python",
     "notebook.defaultFormatter": "ms-python.python",
-    "leetcode.editor.shortcuts": [
-        "test",
-        "submit"
-    ],
-    "python.analysis.nodeExecutable": "/home/aloks/.local/share/fnm/node-versions/v20.16.0/installation/bin/node",
-    "terminal.external.linuxExec": "/usr/local/bin/alacritty",
-    "terminal.integrated.shell.linux": "/usr/bin/zsh",
-    "terminal.integrated.shellArgs.linux": [
-        "-l",
-        "-d 3"
-    ],
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
-        "Ubuntu (WSL)": {
-            "path": "C:\\Windows\\System32\\wsl.exe",
-            "args": [
-                "-d",
-                "Ubuntu"
-            ]
-        }
-    },
+    "python.analysis.nodeExecutable": "/home/aloks/.local/share/fnm/node-versions/v20.17.0/installation/bin/node",
+    "terminal.external.linuxExec": "/usr/bin/wezterm",
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "terminal.integrated.fontWeight": "normal",
     "window.menuBarVisibility": "toggle",
@@ -144,6 +105,4 @@
     "security.workspace.trust.untrustedFiles": "open",
     "editor.fontSize": 16,
     "editor.minimap.enabled": false,
-    "python.analysis.autoImportCompletions": true,
-    "workbench.activityBar.location": "bottom",
 }
