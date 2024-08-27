@@ -6,10 +6,10 @@ Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 Xft.dpi: 96
 
-! st.font: JetBrainsMono Nerd Font:style:medium:pixelsize=18
+st.font: JetBrainsMono Nerd Font:style:medium:pixelsize=18
 ! st.font: MonaspiceAr Nerd Font:style:medium:pixelsize=18
 st.font2: Twemoji:antialias=true:autohint=true:pixelsize=18
-st.font: FiraCode Nerd Font:style:medium:pixelsize=18
+! st.font: FiraCode Nerd Font:style:medium:pixelsize=20*/
 ! st.font: MonaspiceAr Nerd Font:pixelsize=18
 ! st.font: DejaVuSansM Nerd Font:style:medium:pixelsize=18
 ! st.font: CaskaydiaCove Nerd Font:style:medium:pixelsize=20
