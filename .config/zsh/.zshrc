@@ -20,12 +20,12 @@ if command -v bat &> /dev/null; then
   alias catt="bat -pp --theme gruvbox-dark" 
 fi
 
-# starship prompt
-eval "$(starship init zsh)"
-
 # plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# starship prompt
+eval "$(starship init zsh)"
