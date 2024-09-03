@@ -1,4 +1,6 @@
 #!/bin/sh
+alias ..='cd ..'
+alias ...='cd ../..'
 alias j='z'
 alias f='zi'
 alias g='lazygit'
@@ -46,3 +48,7 @@ alias psmem='ps auxf | sort -nr -k 4 | head -5'
 
 # get top process eating cpu ##
 alias pscpu='ps auxf | sort -nr -k 3 | head -5'
+
+# pgadmin4
+alias pgadmin4='cd ~/Desktop && source .venv/bin/activate && pgadmin4'
+alias pytest='pytest -v --disable-warnings -x'
