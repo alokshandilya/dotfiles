@@ -1,6 +1,10 @@
 #!/bin/sh
 
-xset r rate 210 40
+# Check if running under X11
+if [ "$XDG_SESSION_TYPE" = "x11" ]; then
+  setxkbmap -option caps:escape
+  xset r rate 210 40
+fi
 
 # history
 HISTFILE=~/.zsh_history
