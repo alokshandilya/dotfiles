@@ -7,10 +7,10 @@
     "version": "2"
   },
   "vim_mode": true,
-  "ui_font_size": 16,
+  "ui_font_size": 18,
   "buffer_font_size": 24,
   "buffer_line_height": "comfortable",
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "FiraCode Nerd Font",
   "load_direnv": "shell_hook",
   "theme": {
     "mode": "dark",
@@ -42,6 +42,6 @@
   },
   "terminal": {
     "font_family": "FiraCode Nerd Font",
-    "font_size": 16
+    "font_size": 18
   }
 }

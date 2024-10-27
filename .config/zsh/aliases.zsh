@@ -16,7 +16,7 @@ alias rel='xrdb merge /home/aloks/.Xresources && kill -USR1 $(pidof st)'
 
 # yt-dlp
 # alias ytbv='yt-dlp -f bestaudio+bestvideo --verbose --no-playlist'
-alias ytbv='yt-dlp -f "bestvideo[height<=720]+bestaudio" --merge-output-format mp4 --verbose --no-playlist'
+alias ytbv='yt-dlp -f "bestvideo[height<=1080]+bestaudio" --merge-output-format mp4 --verbose --no-playlist'
 alias ytba='yt-dlp -f bestaudio -x --audio-format mp3 --verbose --no-playlist'
 # alias ytp='yt-dlp --yes-playlist -o "%(playlist_index)s-%(title)s.%(ext)s"'
 alias ytp='yt-dlp -f "bestvideo[height<=720]+bestaudio" --merge-output-format mp4 --yes-playlist -o "%(playlist_index)s-%(title)s.%(ext)s"'

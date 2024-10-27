@@ -17,11 +17,11 @@ set -U fish_user_paths $HOME/.local/bin \
 ############################
 # set fish_greeting                     # Supresses fish's intro message
 set TERM "xterm-256color"             # Sets the terminal type
-set EDITOR "lvim"                      # $EDITOR use lvim in terminal
+set EDITOR "nvim"                      # $EDITOR use nvim in terminal
 set -Ux PYENV_ROOT $HOME/.pyenv
 set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 #set -x VIRTUAL_ENV (python -c "import sys; print(sys.prefix)")
-set -x MANPAGER 'lvim +Man!'
+set -x MANPAGER 'nvim +Man!'
 set -x MANWIDTH 999
 set -x BAT_THEME "gruvbox-dark"
 # set -x LD_PRELOAD=/usr/lib/libfreetype.so.6
@@ -50,8 +50,8 @@ alias .5='cd ../../../../..'
 alias j='z'
 alias f='zi'
 alias g='lazygit'
-alias v='lvim'
-alias sv='sudo -E lvim'
+alias v='nvim'
+alias sv='sudo -E nvim'
 alias td='todoist-cli'
 alias testToMainPush='git switch main && git merge test && git push && git switch test'
 alias cat='bat'
@@ -77,12 +77,12 @@ alias mdtopdf="pandoc --pdf-engine=xelatex -V 'mainfont:DejaVuSerif' -V 'mainfon
 # eg : mdtopdf <file.md> -o <file.pdf>
 # alias emacs='emacsclient -c -a 'emacs''
 alias n='notetaker'
-alias ndsa='lvim ~/Dropbox/notes/src/note-1-dsa.md'
+alias ndsa='nvim ~/Dropbox/notes/src/note-1-dsa.md'
 alias dsa='.local/bin/scripts/dsa.sh'
-alias ndsa='lvim ~/Dropbox/notes/src/dsa-roadmap.txt'
-alias ndsa2='lvim ~/Dropbox/notes/src/note-2-dsa.md'
-alias sem1ds='lvim ~/SEM1/Datesheet.txt'
-alias ncuet='lvim ~/Dropbox/notes/src/note-1-cuet.md'
+alias ndsa='nvim ~/Dropbox/notes/src/dsa-roadmap.txt'
+alias ndsa2='nvim ~/Dropbox/notes/src/note-2-dsa.md'
+alias sem1ds='nvim ~/SEM1/Datesheet.txt'
+alias ncuet='nvim ~/Dropbox/notes/src/note-1-cuet.md'
 alias ka='killall'
 alias c='clear'
 alias pipI='pip install --user --break-system-packages'
