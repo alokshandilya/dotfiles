@@ -20,6 +20,7 @@ video/x-flv=vlc.desktop
 video/x-ms-wmv=vlc.desktop
 video/x-ogm+ogg=vlc.desktop
 video/x-theora+ogg=vlc.desktop
+x-scheme-handler/gitkraken=GitKraken.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-ZUO2R1.desktop;
