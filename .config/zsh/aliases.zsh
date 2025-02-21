@@ -50,5 +50,5 @@ alias psmem='ps auxf | sort -nr -k 4 | head -5'
 alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 
 # pgadmin4
-alias pgadmin4='cd ~/Desktop && source .venv/bin/activate && pgadmin4'
+# alias pgadmin4='cd ~/Desktop && source .venv/bin/activate && pgadmin4'
 alias pytesta='pytest -v --disable-warnings -x'

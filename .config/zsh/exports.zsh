@@ -14,5 +14,6 @@ export GOPATH=$HOME/.local/share/go
 export PATH=$HOME/.local/share/fnm:$PATH
 export PATH=$HOME/.config/emacs/bin:$PATH
 export PATH="$HOME/.local/share/neovim/bin":$PATH
+export PATH="$HOME/development/flutter/bin":$PATH
 eval "$(fnm env)"
 eval "$(zoxide init zsh)"
