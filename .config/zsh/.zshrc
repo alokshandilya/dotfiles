@@ -31,4 +31,4 @@ eval "$(pyenv init - zsh)"
 
 # starship prompt
 eval "$(starship init zsh)"
-
+# eval "fastfetch"

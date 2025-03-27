@@ -1,4 +1,5 @@
 #!/bin/sh
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias j='z'
@@ -37,7 +38,8 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 # mirror
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+# alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirror="sudo reflector -c India -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 
 # easier to read disk
 alias df='df -h'     # human-readable sizes
