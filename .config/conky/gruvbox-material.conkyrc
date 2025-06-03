@@ -1,11 +1,11 @@
 --[[
 ########################################
-#########  DWM-Conky Gruvbox  ##########
+#########  Qtile-Conky Gruvbox  ##########
 ########################################
 ]]
 
 conky.config = {
-
+  out_to_wayland = false,
 	--Various settings
 	background = true, 							-- forked to background
 	cpu_avg_samples = 2,						-- The number of samples to average for CPU monitoring.
@@ -77,9 +77,9 @@ conky.config = {
 	-- own_window_colour = '#1d2021',				-- set colour if own_window_transparent no
 	own_window_colour = '#1d2021',				-- set colour if own_window_transparent no
 	own_window_transparent = false,				-- if own_window_argb_visual is true sets background opacity 0%
-	own_window_title = 'dwm_conky', 			-- set the name manually
-	own_window_type = 'override',				-- if own_window true options are: normal/override/dock/desktop/panel
-	own_window_hints = 'undecorated,below,above,sticky,skip_taskbar,skip_pager',  -- if own_window true - just hints - own_window_type sets it
+	own_window_title = 'hyprland_conky', 	-- set the name manually
+	own_window_type = 'desktop',				-- if own_window true options are: normal/override/dock/desktop/panel
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',  -- if own_window true - just hints - own_window_type sets it
 
 	--Colors (Gruvbox Dark)
 	color0 = '#D3869B',
@@ -101,18 +101,20 @@ ${color2}${goto 12}${membar 8,254}${color}
 ${goto 12}${voffset 5}${color1}${top_mem name 1}$alignr$color${top_mem mem_res 1}
 ${goto 12}${color1}${top_mem name 2}$alignr$color${top_mem mem_res 2}
 ${goto 12}${color1}${top_mem name 3}$alignr$color${top_mem mem_res 3}
-${voffset 18}${color1}${alignc}${font4}DWM KEYBINDINGS${font}${color}
+${voffset 18}${color1}${alignc}${font4}QTILE KEYBINDINGS${font}${color}
 ${color1}${hr}${color}
 ${color1}[M]+[GRAVE]${alignr}${color2}scratchpad${color}
-${color1}[M]+[RET]${alignr}${color2}st-terminal${color}
-${color1}[M]+d${alignr}${color2}dmenu${color}
-${color1}[M]+[SHIFT]+d${alignr}${color2}rofi${color}
-${color1}[M]+e, e${alignr}${color2}neovim${color}
-${color1}[M]+e, f${alignr}${color2}pcmanfm${color}
-${color1}[M]+e, r${alignr}${color2}ranger${color}
+${color1}[M]+[RET]${alignr}${color2}terminal/kitty${color}
+${color1}[M]+d${alignr}${color2}app launcher/rofi${color}
+# ${color1}[M]+[SHIFT]+d${alignr}${color2}rofi${color}
+# ${color1}[M]+e, e${alignr}${color2}neovim${color}
+${color1}[M]+e, f${alignr}${color2}file manager/pcmanfm${color}
+# ${color1}[M]+e, r${alignr}${color2}ranger${color}
 ${color1}[M]+[SHIFT]+t${alignr}${color2}bpytop${color}
-${color1}[M]+v${alignr}${color2}pavucontrol${color}
-${color1}[M]+w${alignr}${color2}browser${color}
+${color1}[M]+w${alignr}${color2}web browser/zen${color}
+${color1}[M]+v, c${alignr}${color2}code/zed${color}
+${color1}[M]+v, v${alignr}${color2}pavucontrol${color}
+${color1}[M]+b, m${alignr}${color2}bluetooth/blueman${color}
 ${color1}[M]+[CTRL]+h${alignr}${color2}brightness dec${color}
 ${color1}[M]+[CTRL]+l${alignr}${color2}brightness inc${color}
 ${color1}[M]+[CTRL]+j${alignr}${color2}volume dec${color}
@@ -122,17 +124,20 @@ ${color1}[M]+hjkl${alignr}${color2}move win focus${color}
 ${color1}[M]+[SHIFT]+hjkl${alignr}${color2}move window${color}
 ${color1}[M]+[1-9]${alignr}${color2}switch workspace${color}
 ${color1}[M]+[SHIFT]+[1-9]${alignr}${color2}send window${color}
-${color1}[M]+h/l${alignr}${color2}shrink/expand${color}
-${color1}[M]+[SHIFT]+h/l${alignr}${color2}shrink/expand-${color}
+${color1}[M]+i/m${alignr}${color2}expand/shrink${color}
+# ${color1}[M]+[SHIFT]+h/l${alignr}${color2}shrink/expand-${color}
 ${alignr}${color2}cfact${color}
 ${color1}[M]+[SHIFT]+q${alignr}${color2}close window${color}
 ${color1}${hr}${color}
-${color1}[M]+b${alignr}${color2}hide/show bar${color}
-${color1}[M]+u${alignr}${color2}increase gaps${color}
-${color1}[M]+[SHIFT]+u${alignr}${color2}decrease gaps${color}
+# ${color1}[M]+b${alignr}${color2}hide/show bar${color}
+# ${color1}[M]+u${alignr}${color2}increase gaps${color}
+# ${color1}[M]+[SHIFT]+u${alignr}${color2}decrease gaps${color}
 ${color1}[M]+[CTRL]+x${alignr}${color2}lockscreen${color}
-${color1}[M]+[SHIFT]+f${alignr}${color2}fullscreen${color}
+${color1}[M]+f${alignr}${color2}fullscreen${color}
+${color1}[M]+t${alignr}${color2}toggle floating${color}
+${color1}PRINT${alignr}${color2}grim/flameshot${color}
 ${color1}${hr}${color}
-${color1}[M]+x, x${alignr}${color2}quit dwm${color}
+${color1}[M]+x, x${alignr}${color2}quit qtile${color}
+${color1}[M]+x, r${alignr}${color2}reload qtile${color}
 ${color1}[M]+x, p${alignr}${color2}poweroff${color}
 ]];
