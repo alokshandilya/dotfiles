@@ -1,8 +1,14 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# Inserts a blank line between shell prompts [true, false]
+# Inserts a blank line between shell prompts
 add_newline = false
+
+# Timeout for commands executed by starship (in milliseconds).
+command_timeout = 3600000
+
+# Timeout for starship to scan files (in milliseconds).
+scan_timeout = 500
 
 [line_break]
 disabled = false
