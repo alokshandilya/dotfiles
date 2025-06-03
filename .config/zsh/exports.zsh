@@ -17,6 +17,12 @@ export PATH=$HOME/.config/emacs/bin:$PATH
 export PATH="$HOME/.local/share/neovim/bin":$PATH
 export PATH="$HOME/development/flutter/bin":$PATH
 export SPARK_HOME="/opt/apache-spark"
-export ELECTRON_OZONE_PLATFORM_HINT="auto"
+export GEMINI_API_KEY="your_api_key_here"
 eval "$(fnm env)"
 eval "$(zoxide init zsh)"
+
+
+
+# if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+#   # ~/.local/bin/wayland-start.sh
+# fi
