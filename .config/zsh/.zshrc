@@ -25,10 +25,20 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init - zsh)"
+#
+eval "$(uv generate-shell-completion zsh)"
 
 # starship prompt
 eval "$(starship init zsh)"
-# eval "fastfetch"
+
+# Check if the terminal is kitty and run fastfetch if it is
+if [[ $TERM == "xterm-kitty" ]]; then
+  if command -v fastfetch >/dev/null 2>&1; then
+    fastfetch
+  else
+    echo "fastfetch command not found."
+  fi
+fi
