@@ -103,6 +103,7 @@
     "git_status": true
   },
   "ensure_final_newline_on_save": false,
+  "remove_trailing_whitespace_on_save": false,
   "terminal": {
     "font_family": "FiraCode Nerd Font",
     "font_size": 16
