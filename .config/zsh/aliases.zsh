@@ -11,8 +11,10 @@ alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git
 alias nvimrc='nvim ~/.config/nvim/'
 alias nman='bob'
 alias sshk="kitty +kitten ssh"
-alias ls='exa --icons'
-alias la='exa --icons -la'
+alias ls='eza --icons'
+alias la='eza --icons -la'
+alias snls='sudo snapper -c root ls'
+alias snlsh='sudo snapper -c home ls'
 alias mdtopdf="pandoc --pdf-engine=xelatex -V 'mainfont:DejaVuSerif' -V 'mainfontoptions:Extension=.ttf, UprightFont=*, BoldFont=*-Bold, ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic' -V 'sansfont:DejaVuSans.ttf' -V 'monofont:DejaVuSansMono.ttf' -V "geometry:margin=1in" --highlight-style=zenburn"
 alias vim='nvim'
 alias rel='xrdb merge /home/aloks/.Xresources && kill -USR1 $(pidof st)'

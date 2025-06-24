@@ -80,10 +80,10 @@
         "context_servers": {}
       }
     },
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gemini-2.5-pro"
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
