@@ -1,6 +1,6 @@
 {
   "edit_predictions": {
-    "mode": "subtle",
+    "mode": "eager",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null
@@ -14,12 +14,8 @@
       "language_servers": ["pyright", "ruff"],
       "format_on_save": "off",
       "formatter": [
-        {
-          "code_actions": {
-            "source.organizeImports.ruff": true,
-            "source.fixAll.ruff": true
-          }
-        },
+        { "code_action": "source.organizeImports.ruff" },
+        { "code_action": "source.fixAll.ruff" },
         {
           "language_server": {
             "name": "ruff"
@@ -47,45 +43,16 @@
     }
   },
   "features": {
-    // "edit_prediction_provider": "zed"
     "edit_prediction_provider": "copilot"
   },
   "agent": {
     "always_allow_tool_actions": true,
-    "inline_assistant_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-thinking-latest"
-    },
-    "profiles": {
-      "aloks": {
-        "name": "aloks",
-        "tools": {
-          "thinking": true,
-          "terminal": true,
-          "read_file": true,
-          "open": true,
-          "now": true,
-          "move_path": true,
-          "copy_path": true,
-          "diagnostics": true,
-          "delete_path": true,
-          "create_directory": true,
-          "list_directory": true,
-          "grep": true,
-          "find_path": true,
-          "fetch": true,
-          "edit_file": true
-        },
-        "enable_all_context_servers": false,
-        "context_servers": {}
-      }
-    },
-    "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "model": "claude-sonnet-4.5"
     },
-    "version": "2"
+    "default_profile": "write",
+    "model_parameters": []
   },
   "vim_mode": true,
   "ui_font_size": 16,
